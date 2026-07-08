@@ -16,13 +16,17 @@ Game Design Documents :
 
 ---
 
-1. ###### 3C - Character, Camera, Controls :
+* ###### 3C - Character, Camera, Controls :
 
 https://docs.google.com/document/d/1Lp7H2Vs\_3m6UYmr27Sy0Va4IotxcKPpv0Bnc\_uQwn24/edit?usp=sharing
 
 
 
-###### 2\. Pillars :
+* ###### Pillars :
 
 https://docs.google.com/document/d/1xSYy7tvOXrFe7wFXpcC360K1Cuj2gUMHMihnJ2GW84A/edit?usp=sharing
+
+
+
+
 
