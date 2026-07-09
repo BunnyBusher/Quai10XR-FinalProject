@@ -20,36 +20,25 @@ Game Design Documents :
 
 https://docs.google.com/document/d/1NUzVmeYj1abGf3BlM48EUHDP1u\_tjDAXiYB8\_9ufFeI/edit?usp=sharing
 
-
-
 * ###### Vision :
 
 https://docs.google.com/document/d/1iz\_6gonhM1Cp89KoMT9Hl7HAfkaCW5wRrp-\_z\_0obd8/edit?usp=sharing
-
-
 
 * ###### 3C - Character, Camera, Controls :
 
 https://docs.google.com/document/d/1Lp7H2Vs\_3m6UYmr27Sy0Va4IotxcKPpv0Bnc\_uQwn24/edit?usp=sharing
 
-
-
 * ###### 3 Pillars :
 
 https://docs.google.com/document/d/1xSYy7tvOXrFe7wFXpcC360K1Cuj2gUMHMihnJ2GW84A/edit?usp=sharing
-
-
 
 * ###### Core Gameplay Loop :
 
 https://docs.google.com/document/d/1jNPFsU1gFuf1cp7F7RDtT\_q0MSlboowVGslLhecgnTc/edit?usp=sharing
 
-
-
 * ###### Scope du projet :
 
 https://docs.google.com/document/d/1aotMEMPliHGimq\_e1zD6hVInu-Rd4NpOQcKCUrfE0-Y/edit?usp=sharing
-
 
 * ###### Risk List :
 
