@@ -1,0 +1,6 @@
+google Scripting API
+
+Extension -> Script -> Apprendre Google Script
+
+dans la function doGet(){
+}
