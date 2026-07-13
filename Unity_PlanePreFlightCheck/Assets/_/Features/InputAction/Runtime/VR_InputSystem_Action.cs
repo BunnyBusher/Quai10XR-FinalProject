@@ -99,7 +99,16 @@ namespace VRInputSystem
                     ""type"": ""Value"",
                     ""id"": ""351f2ccd-1f9f-44bf-9bec-d62ac5c5f408"",
                     ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
+                    ""processors"": ""NormalizeVector2"",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""TurnHead"",
+                    ""type"": ""Value"",
+                    ""id"": ""dcf73940-2360-4c84-86c3-d344639b50af"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": ""NormalizeVector2"",
                     ""interactions"": """",
                     ""initialStateCheck"": true
                 }
@@ -108,11 +117,22 @@ namespace VRInputSystem
                 {
                     ""name"": """",
                     ""id"": ""1635d3fe-58b6-4ba9-a4e2-f4b964f6b5c8"",
-                    ""path"": ""<XRController>/{Primary2DAxis}"",
+                    ""path"": ""<XRController>{LeftHand}/{Primary2DAxis}"",
                     ""interactions"": """",
                     ""processors"": ""StickDeadzone(min=0.125,max=0.925)"",
                     ""groups"": ""XR;Keyboard&Mouse;Joystick"",
                     ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fdf40d60-b486-48ba-9f6e-228224aaceda"",
+                    ""path"": ""<XRController>{RightHand}/{Primary2DAxis}"",
+                    ""interactions"": """",
+                    ""processors"": ""StickDeadzone(min=0.5,max=0.925)"",
+                    ""groups"": "";Keyboard&Mouse;Joystick;XR"",
+                    ""action"": ""TurnHead"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -185,6 +205,7 @@ namespace VRInputSystem
             // Player
             m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
             m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
+            m_Player_TurnHead = m_Player.FindAction("TurnHead", throwIfNotFound: true);
         }
 
         ~@VRInputSystemAction()
@@ -266,6 +287,7 @@ namespace VRInputSystem
         private readonly InputActionMap m_Player;
         private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
         private readonly InputAction m_Player_Move;
+        private readonly InputAction m_Player_TurnHead;
         /// <summary>
         /// Provides access to input actions defined in input action map "Player".
         /// </summary>
@@ -281,6 +303,10 @@ namespace VRInputSystem
             /// Provides access to the underlying input action "Player/Move".
             /// </summary>
             public InputAction @Move => m_Wrapper.m_Player_Move;
+            /// <summary>
+            /// Provides access to the underlying input action "Player/TurnHead".
+            /// </summary>
+            public InputAction @TurnHead => m_Wrapper.m_Player_TurnHead;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -310,6 +336,9 @@ namespace VRInputSystem
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+                @TurnHead.started += instance.OnTurnHead;
+                @TurnHead.performed += instance.OnTurnHead;
+                @TurnHead.canceled += instance.OnTurnHead;
             }
 
             /// <summary>
@@ -324,6 +353,9 @@ namespace VRInputSystem
                 @Move.started -= instance.OnMove;
                 @Move.performed -= instance.OnMove;
                 @Move.canceled -= instance.OnMove;
+                @TurnHead.started -= instance.OnTurnHead;
+                @TurnHead.performed -= instance.OnTurnHead;
+                @TurnHead.canceled -= instance.OnTurnHead;
             }
 
             /// <summary>
@@ -436,6 +468,13 @@ namespace VRInputSystem
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
             void OnMove(InputAction.CallbackContext context);
+            /// <summary>
+            /// Method invoked when associated input action "TurnHead" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// </summary>
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+            void OnTurnHead(InputAction.CallbackContext context);
         }
     }
 }
