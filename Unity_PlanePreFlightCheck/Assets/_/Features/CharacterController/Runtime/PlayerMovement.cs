@@ -1,7 +1,9 @@
+using System;
 using Foundation.Runtime;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit.Interactors.Visuals;
 using VRInputSystem;
 
 namespace CharacterController.Runtime
@@ -51,7 +53,11 @@ namespace CharacterController.Runtime
                 MovementHead(context.ReadValue<Vector2>());
             }
         }
-        
+
+        public void OnTeleport(InputAction.CallbackContext context)
+        {
+            throw new NotImplementedException();
+        }
 
         #endregion
 
@@ -92,6 +98,12 @@ namespace CharacterController.Runtime
         // Movement Variable
         private Vector2 _playerInputMovement;
         
+        #endregion
+
+        #region Main Method
+
+        
+
         #endregion
     }
 }
