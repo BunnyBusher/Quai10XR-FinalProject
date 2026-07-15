@@ -994,13 +994,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4889307685540146708, guid: 90beb901784cfcf4a9e7019e4bf0ad17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7163671576389282425}
   m_SourcePrefab: {fileID: 100100000, guid: 90beb901784cfcf4a9e7019e4bf0ad17, type: 3}
 --- !u!4 &3194177352324858479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3262804714348745945, guid: 90beb901784cfcf4a9e7019e4bf0ad17, type: 3}
   m_PrefabInstance: {fileID: 77740940127753910}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4813925335318198434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4889307685540146708, guid: 90beb901784cfcf4a9e7019e4bf0ad17, type: 3}
+  m_PrefabInstance: {fileID: 77740940127753910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7163671576389282425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4813925335318198434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3448c0794fe8a7a4fb604303d0245ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: CharacterController.Runtime::CharacterController.Runtime.CockpitBehaviour
 --- !u!1001 &264248002912680559
 PrefabInstance:
   m_ObjectHideFlags: 0
