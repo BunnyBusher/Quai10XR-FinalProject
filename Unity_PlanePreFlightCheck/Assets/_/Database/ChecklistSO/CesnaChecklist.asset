@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06af958d168b23a4eb7f47c878c119cd, type: 3}
+  m_Name: CesnaChecklist
+  m_EditorClassIdentifier: Checklist.Runtime::Checklist.Runtime.ChecklistScriptableObject
+  m_name:
+  - Enlever les caches Pito
+  - "V\xE9rifier le carburant"
+  - Purger son avion
+  - "V\xE9rifier le frein de parking"
+  - "Enlever le V\xE9rrou de Gouverne"
+  - "V\xE9rifier les gouvernes"
+  - "V\xE9rfier le Contact"
+  - "V\xE9rifier le plancher"
+  - "V\xE9rifier l'extincteur"
+  - "V\xE9rifier le selecteur de carburant"
+  - "V\xE9rifier la valve de purge d'urgence de carburant"
+  - "V\xE9rifier la roulette de trim"
+  - "V\xE9rifier la valve \xE0 m\xE9lange Air-Carburant"
+  - "V\xE9rifier la valve de gaz"
+  - Mise en route batterie
+  - "V\xE9rifier les indicateurs du cockpit"
+  - "Jauge \xE0 carburant"
+  - "Jauge \xE0 pression d'essence"
+  - Allumer les Ventilateurs
+  - "V\xE9rifier la tirette des volets"
+  - Allumer la Balise
+  - Allumer feu de roulage
+  - "Allumer feu d'att\xE9rissage"
+  - Allumer feu anticolision
+  - Allumer feu navigation
+  - "V\xE9rfier le feu anticolision"
+  - "V\xE9rfier le feu arri\xE9re"
+  - "V\xE9rifier le feu aile droite"
+  - "V\xE9rifier le feu de d\xE9collage et d'att\xE9rissage"
+  - "V\xE9rifier le feu aile gauche"
+  - "V\xE9rifier le chauffage"
+  - "V\xE9rifier le nombre d'heure de vol"
+  - Eteindre tout ce qui est pompe
+  - "V\xE9rifier les documents"
+  - "V\xE9rfier la porte \xE0 bagage"
+  - "V\xE9rifier le r\xE9servoir de carburant"
+  - "V\xE9rification de la prise Statique gauche"
+  - "V\xE9rifier les antennes"
+  - "V\xE9rifier la gouverne de profondeur"
+  - "V\xE9rifier la trim"
+  - "V\xE9rifier la gouverne de d\xE9rive"
+  - "V\xE9rifier la gouverne de profondeur"
+  - "V\xE9rification de la prise Statique droite"
+  - "V\xE9rifier les volets de l'aile droite"
+  - "V\xE9rifier les ailerons de l'aile droite"
+  - "V\xE9rifier les trous sous l'aileron"
+  - "V\xE9rifier le saumon droit"
+  - "V\xE9rifier le bord d'attaque de l'aile droite"
+  - "V\xE9rifier l'avertisseur de d\xE9crochage"
+  - "V\xE9rfier le carr\xE9nage a\xE9rodynamique droit"
+  - "V\xE9rifier l'huile dans le moteur"
+  - "V\xE9rifier le capuchon d'acces \xE0 l'huile moteur"
+  - "V\xE9rifier l'h\xE9lice"
+  - "V\xE9rifier la courroie"
+  - "V\xE9rifier la prise d'air moteur"
+  - "V\xE9rifier le pot d'\xE9chappement"
+  - "V\xE9rifier le bord d'attaque de l'aile gauche"
+  - "V\xE9rifier la prise dynamique gauche"
+  - "V\xE9rifier le carr\xE9nage a\xE9rodynamique gauche"
+  - "V\xE9rifier le saumon gauche"
+  - "V\xE9rifier les ailerons de l'aile gauche"
+  - "V\xE9rifier les volets de l'aile gauche"

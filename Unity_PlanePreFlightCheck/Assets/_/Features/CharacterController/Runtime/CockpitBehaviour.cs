@@ -16,12 +16,14 @@ namespace CharacterController.Runtime
 
         private void OnEnable()
         {
+            if (_teleportModeExit is null) return;
             _teleportModeExit.action.Enable();
         }
 
        
         private void OnDisable()
         {
+            if (_teleportModeExit is null) return;
             _teleportModeExit.action.Disable();
         }
 
