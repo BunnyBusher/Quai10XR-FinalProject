@@ -157,7 +157,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6805344054879439605}
   m_HandleRect: {fileID: 5703928979524219430}
   m_Direction: 2
-  m_Value: 0.99998033
+  m_Value: 0.9999998
   m_Size: 0.535
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -811,7 +811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Checklist.Runtime::Checklist.Runtime.ChecklistDisplayer
   _checklistScriptableObject: {fileID: 11400000, guid: bd9f25caced74a24c8ac0c66f0bae7b0, type: 2}
-  _checklistPrefab: {fileID: 0}
+  _checklistPrefab: {fileID: 7048175617417843611, guid: 62de44a24c99fa34ba1131fc788cae7e, type: 3}
   _checklistTransform: {fileID: 3987957145226924276}
 --- !u!1 &6994243997679606300
 GameObject:
@@ -848,7 +848,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00021308445, y: 0.0036782697}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1806034620077941487
