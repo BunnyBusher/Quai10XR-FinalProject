@@ -1,4 +1,3 @@
-using System;
 using Foundation.Runtime;
 using TMPro;
 using UnityEngine;

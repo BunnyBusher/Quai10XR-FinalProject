@@ -16,7 +16,7 @@ namespace InteractionBehaviour.Runtime
         
         #region Main Method
 
-        public void SendDebugMessage()
+        public void ButtonIsPress()
         {
             _isActivate = !_isActivate;
             transform.localRotation = _isActivate ? Quaternion.Euler(0, 0, 20) : Quaternion.Euler(0,0,50);
