@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 436fba975b50aad4083317829683c0df
+guid: bc13fc501da139244b888c320a8ce0ce
 ModelImporter:
   serializedVersion: 24400
   internalIDToNameTable: []
   externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAT_Hangar
-    second: {fileID: 2100000, guid: 92276aefd9e271e4fb1bc8c1881a0333, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

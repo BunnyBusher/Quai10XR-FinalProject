@@ -8,7 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Hangar
-    second: {fileID: 2100000, guid: ac574146d0ae15c4aa1b50ab45927d2c, type: 2}
+    second: {fileID: 2100000, guid: 92276aefd9e271e4fb1bc8c1881a0333, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Interactible
+    second: {fileID: 2100000, guid: 92276aefd9e271e4fb1bc8c1881a0333, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
