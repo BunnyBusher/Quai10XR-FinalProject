@@ -23,6 +23,15 @@
                     "processors": "NormalizeVector2",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Teleport",
+                    "type": "Button",
+                    "id": "3877eb93-2ea5-4b1f-b8a9-21ff2dfb0530",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -45,6 +54,17 @@
                     "processors": "StickDeadzone(min=0.5,max=0.925)",
                     "groups": ";Keyboard&Mouse;Joystick;XR",
                     "action": "TurnHead",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "386c6bdd-6277-4e68-8291-eec3e677d6aa",
+                    "path": "<XRController>{RightHand}/{TriggerButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teleport",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

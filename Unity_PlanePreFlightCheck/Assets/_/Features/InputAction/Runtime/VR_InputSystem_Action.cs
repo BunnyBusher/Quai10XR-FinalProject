@@ -111,6 +111,15 @@ namespace VRInputSystem
                     ""processors"": ""NormalizeVector2"",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Teleport"",
+                    ""type"": ""Button"",
+                    ""id"": ""3877eb93-2ea5-4b1f-b8a9-21ff2dfb0530"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -133,6 +142,17 @@ namespace VRInputSystem
                     ""processors"": ""StickDeadzone(min=0.5,max=0.925)"",
                     ""groups"": "";Keyboard&Mouse;Joystick;XR"",
                     ""action"": ""TurnHead"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""386c6bdd-6277-4e68-8291-eec3e677d6aa"",
+                    ""path"": ""<XRController>{RightHand}/{TriggerButton}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Teleport"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -206,6 +226,7 @@ namespace VRInputSystem
             m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
             m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
             m_Player_TurnHead = m_Player.FindAction("TurnHead", throwIfNotFound: true);
+            m_Player_Teleport = m_Player.FindAction("Teleport", throwIfNotFound: true);
         }
 
         ~@VRInputSystemAction()
@@ -288,6 +309,7 @@ namespace VRInputSystem
         private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
         private readonly InputAction m_Player_Move;
         private readonly InputAction m_Player_TurnHead;
+        private readonly InputAction m_Player_Teleport;
         /// <summary>
         /// Provides access to input actions defined in input action map "Player".
         /// </summary>
@@ -307,6 +329,10 @@ namespace VRInputSystem
             /// Provides access to the underlying input action "Player/TurnHead".
             /// </summary>
             public InputAction @TurnHead => m_Wrapper.m_Player_TurnHead;
+            /// <summary>
+            /// Provides access to the underlying input action "Player/Teleport".
+            /// </summary>
+            public InputAction @Teleport => m_Wrapper.m_Player_Teleport;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -339,6 +365,9 @@ namespace VRInputSystem
                 @TurnHead.started += instance.OnTurnHead;
                 @TurnHead.performed += instance.OnTurnHead;
                 @TurnHead.canceled += instance.OnTurnHead;
+                @Teleport.started += instance.OnTeleport;
+                @Teleport.performed += instance.OnTeleport;
+                @Teleport.canceled += instance.OnTeleport;
             }
 
             /// <summary>
@@ -356,6 +385,9 @@ namespace VRInputSystem
                 @TurnHead.started -= instance.OnTurnHead;
                 @TurnHead.performed -= instance.OnTurnHead;
                 @TurnHead.canceled -= instance.OnTurnHead;
+                @Teleport.started -= instance.OnTeleport;
+                @Teleport.performed -= instance.OnTeleport;
+                @Teleport.canceled -= instance.OnTeleport;
             }
 
             /// <summary>
@@ -475,6 +507,13 @@ namespace VRInputSystem
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
             void OnTurnHead(InputAction.CallbackContext context);
+            /// <summary>
+            /// Method invoked when associated input action "Teleport" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// </summary>
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+            void OnTeleport(InputAction.CallbackContext context);
         }
     }
 }
