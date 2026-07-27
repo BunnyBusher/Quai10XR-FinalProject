@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using FactSystem.Runtime;
 using Localisation.Runtime;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -48,7 +49,8 @@ namespace GameManager.Runtime
 
         private void Start()
         {
-            //SceneManager.LoadScene("00_UiMenu", LoadSceneMode.Additive);
+            SceneManager.LoadScene(_playerControllerScene.name, LoadSceneMode.Additive);
+            SceneManager.LoadScene(_mainMenuScene.name, LoadSceneMode.Additive);
         }
 
         #endregion
@@ -198,8 +200,9 @@ namespace GameManager.Runtime
 
         #region Private and Protected
 
+        [SerializeField] private SceneAsset _playerControllerScene;
+        [SerializeField] private SceneAsset _mainMenuScene;
 
-        
 
         #endregion
 
