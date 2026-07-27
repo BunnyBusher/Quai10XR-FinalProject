@@ -1,0 +1,48 @@
+%!Adobe-FontList 1.25
+%Locale:0x80c
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\P\Quai10XR-FinalProject\Unity_PlanePreFlightCheck\Assets\_\ART\UI\Font\Roboto-VariableFont_wdth,wght SDF.asset
+FileModTime:1785160161
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\P\Quai10XR-FinalProject\Unity_PlanePreFlightCheck\Assets\_\ART\UI\Font\Roboto-VariableFont_wdth,wght SDF.asset.meta
+FileModTime:1785160149
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Regular
+FamilyName:Roboto
+StyleName:Regular
+FullName:Roboto Regular
+MenuName:Roboto
+FamilyPrefix:Roboto
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\P\Quai10XR-FinalProject\Unity_PlanePreFlightCheck\Assets\_\ART\UI\Font\Roboto-VariableFont_wdth,wght.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:TrueTypeVariableFont
+FileLength:487768
+FileModTime:1785159825
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Roboto
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\P\Quai10XR-FinalProject\Unity_PlanePreFlightCheck\Assets\_\ART\UI\Font\Roboto-VariableFont_wdth,wght.ttf.meta
+FileModTime:1785159893
+%EndFont
+
