@@ -1,9 +1,10 @@
 {
-    "name": "GameManager.Runtime",
-    "rootNamespace": "GameManager.Runtime",
+    "name": "LevelManager.Runtime",
+    "rootNamespace": "LevelManager.Runtime",
     "references": [
-        "GUID:5e58f437db031314e8413e3c750d0aa4",
-        "GUID:0922ec94b01bb0a4abb23c9a2ed6f06e",
+        "GUID:0f6ec9d6a5290f34ab3879e1747c49de",
+        "GUID:32a48e83de2af2e4aa10ea40a0d87a62",
+        "GUID:187f8190c12f02c4fa15650462987ff5",
         "GUID:fe685ec1767f73d42b749ea8045bfe43"
     ],
     "includePlatforms": [],

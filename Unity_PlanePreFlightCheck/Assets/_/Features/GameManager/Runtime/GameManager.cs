@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using FactSystem.Runtime;
 using Localisation.Runtime;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion;
 
 namespace GameManager.Runtime
 {
@@ -49,8 +49,14 @@ namespace GameManager.Runtime
 
         private void Start()
         {
-            SceneManager.LoadScene(_playerControllerScene.name, LoadSceneMode.Additive);
-            SceneManager.LoadScene(_mainMenuScene.name, LoadSceneMode.Additive);
+            SceneManager.LoadScene(_playerControllerSceneIndex, LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(_mainMenuSceneIndex, LoadSceneMode.Additive).completed += SetMainMenuActive;
+        }
+
+        private void SetMainMenuActive(AsyncOperation obj)
+        {
+            obj.allowSceneActivation = true;
+            SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(_mainMenuSceneIndex));
         }
 
         #endregion
@@ -181,6 +187,28 @@ namespace GameManager.Runtime
             }
             return null;
         }
+
+        public static void TurnPlayerLocomotion(bool isActivate)
+        {
+            if (m_factDictionary.FacExist("playerController", out GameObject playerController))
+            {
+                playerController.SetActive(isActivate);
+                return;
+            }
+            
+            Debug.LogWarning("No Character Controller found in Dictionnary");
+        }
+        
+        
+        public static GameObject GetPlayerController()
+        {
+            if (m_factDictionary.FacExist("playerController", out GameObject playerController))
+            {
+                return playerController;
+            }
+            Debug.LogWarning("No Character Controller found in Dictionnary");
+            return null;
+        }
         
 
         #endregion
@@ -200,8 +228,8 @@ namespace GameManager.Runtime
 
         #region Private and Protected
 
-        [SerializeField] private SceneAsset _playerControllerScene;
-        [SerializeField] private SceneAsset _mainMenuScene;
+        [SerializeField] private int _playerControllerSceneIndex;
+        [SerializeField] private int _mainMenuSceneIndex;
 
 
         #endregion
