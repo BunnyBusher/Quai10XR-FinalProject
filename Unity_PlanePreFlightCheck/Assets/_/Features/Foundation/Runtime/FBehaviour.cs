@@ -1,6 +1,7 @@
 using FactSystem.Runtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion;
 
 namespace Foundation.Runtime
 {
@@ -46,6 +47,13 @@ namespace Foundation.Runtime
         protected void SetLanguage(string language)=> GameManager.Runtime.GameManager.ChangeLanguage(language);
 
         protected string GetText(string key) => GameManager.Runtime.GameManager.GetTextLocalised(key);
+        
+        //Player Controller
+        protected GameObject SetMovementOnPlayer(bool value)
+        {
+            GameManager.Runtime.GameManager.TurnPlayerLocomotion(value);
+            return GameManager.Runtime.GameManager.GetPlayerController();
+        }
         
         //Math Tools
         protected float Remap (float from, float fromMin, float fromMax, float toMin, float toMax) =>

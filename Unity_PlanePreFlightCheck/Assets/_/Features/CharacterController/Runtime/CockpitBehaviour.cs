@@ -1,18 +1,14 @@
+using System;
+using Foundation.Runtime;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.Locomotion.Teleportation;
-using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 namespace CharacterController.Runtime
 {
-    public class CockpitBehaviour : MonoBehaviour
+    public class CockpitBehaviour : FBehaviour
     {
         #region Unity Api
-
-        private void Awake()
-        {
-            _dynamicMoveProvider = GetComponent<DynamicMoveProvider>();
-        }
 
         private void OnEnable()
         {
@@ -21,6 +17,8 @@ namespace CharacterController.Runtime
         }
 
        
+       
+
         private void OnDisable()
         {
             if (_teleportModeExit is null) return;
@@ -33,7 +31,7 @@ namespace CharacterController.Runtime
 
         private void StartMovementWithJoystick(InputAction.CallbackContext callbackContext)
         {
-            _dynamicMoveProvider.enabled = true;
+            SetMovementOnPlayer(true);
             TeleportRequest teleportRequest = new TeleportRequest();
             teleportRequest.destinationPosition = _teleportExitAnchor.position;
             teleportRequest.destinationRotation = _teleportExitAnchor.rotation;
@@ -49,7 +47,7 @@ namespace CharacterController.Runtime
 
         public void StopMovementWithJoystick()
         {
-            _dynamicMoveProvider.enabled = false;
+            SetMovementOnPlayer(false);
             _teleportModeExit.action.performed += StartMovementWithJoystick;
         }
         
@@ -58,11 +56,10 @@ namespace CharacterController.Runtime
         
         #region Private and Protected
 
-        private DynamicMoveProvider _dynamicMoveProvider;
-
+        
         [SerializeField] private InputActionReference _teleportModeExit;
         [SerializeField] private TeleportationProvider _teleportationProvider;
-        [SerializeField] private Transform _teleportExitAnchor;
+        private Transform _teleportExitAnchor;
 
 
         #endregion
