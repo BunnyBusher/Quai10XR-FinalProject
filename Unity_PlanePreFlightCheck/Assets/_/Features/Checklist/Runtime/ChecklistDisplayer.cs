@@ -36,14 +36,14 @@ namespace Checklist.Runtime
             }
 
             _checklistTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _checklistScriptableObject.m_name.Count * 67f);
-            _initialScale = transform.localScale;
+            _initialScale = _checkboardWithModel.localScale;
         }
         
 
         private void Start()
         {
-            gameObject.SetActive(_isActiveAtStart);
-            if (!_isActiveAtStart) transform.localScale = Vector3.zero;
+            _checkboardWithModel.gameObject.SetActive(_isActiveAtStart);
+            if (!_isActiveAtStart) _checkboardWithModel.localScale = Vector3.zero;
             if (_showCheckListAction is null) return;
             
             _showCheckListAction.action.Enable();
@@ -65,24 +65,24 @@ namespace Checklist.Runtime
         private void DisplayUI(InputAction.CallbackContext obj)
         {
             if (_tweenInProgress) return;
-            bool currentState = gameObject.activeSelf;
+            bool currentState = _checkboardWithModel.gameObject.activeSelf;
 
             if (currentState)
             {
                 _tweenInProgress = true;
                 Sequence.Create()
-                    .Chain(Tween.Scale(transform, 0, _duration, _hideEase)).OnComplete(()=>
+                    .Chain(Tween.Scale(_checkboardWithModel, 0, _duration, _hideEase)).OnComplete(()=>
                 {
-                    gameObject.SetActive(false);
+                    _checkboardWithModel.gameObject.SetActive(false);
                     _tweenInProgress = false;
                 });
             }
             else
             {
                 _tweenInProgress = true;
-                gameObject.SetActive(true);
+                _checkboardWithModel.gameObject.SetActive(true);
                 Sequence.Create()
-                    .Chain(Tween.Scale(transform, _initialScale, _duration, _displayEase)).OnComplete(()=>
+                    .Chain(Tween.Scale(_checkboardWithModel, _initialScale, _duration, _displayEase)).OnComplete(()=>
                         _tweenInProgress = false);
             }
             
@@ -99,7 +99,7 @@ namespace Checklist.Runtime
         [SerializeField] private ChecklistScriptableObject _checklistScriptableObject;
         [SerializeField] private GameObject _checklistPrefab;
         [SerializeField] private RectTransform _checklistTransform;
-        
+        [SerializeField] private Transform _checkboardWithModel;
         [Header("Animation properties")]
         [SerializeField] private InputActionReference _showCheckListAction;
         [SerializeField] private float _duration = 0.5f;
