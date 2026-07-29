@@ -11,11 +11,6 @@ namespace Checklist.Runtime
 
         private void Awake()
         {
-            if (!_checklistScriptableObject)
-            {
-                Debug.LogWarning("ChecklistScriptableObject is missing");
-                return;
-            }
             if (!_checklistPrefab)
             {
                 Debug.LogWarning("ChecklistPrefab is missing");
@@ -27,27 +22,14 @@ namespace Checklist.Runtime
                 Debug.LogWarning("ChecklistTransform is missing");
                 return;
             }
-
-            foreach (string name in _checklistScriptableObject.m_name)
-            {
-                GameObject checklist = Instantiate(_checklistPrefab, _checklistTransform);
-                ChecklistData checklistData = checklist.GetComponent<ChecklistData>();
-                checklistData.Initialise(name);
-            }
-
-            _checklistTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _checklistScriptableObject.m_name.Count * 67f);
-            _initialScale = _checkboardWithModel.localScale;
+            
+            SetFact("checklistDisplayer",this);
         }
-        
+
 
         private void Start()
         {
             _checkboardWithModel.gameObject.SetActive(_isActiveAtStart);
-            if (!_isActiveAtStart) _checkboardWithModel.localScale = Vector3.zero;
-            if (_showCheckListAction is null) return;
-            
-            _showCheckListAction.action.Enable();
-            _showCheckListAction.action.performed += DisplayUI;
         }
 
 
@@ -85,8 +67,28 @@ namespace Checklist.Runtime
                     .Chain(Tween.Scale(_checkboardWithModel, _initialScale, _duration, _displayEase)).OnComplete(()=>
                         _tweenInProgress = false);
             }
+        }
+        
+        
+        public void InitialiseCheckBoard()
+        {
+            ChecklistScriptableObject checklistScriptableObject = GetFact<ChecklistScriptableObject>("checklistSO");
             
+            foreach (string name in checklistScriptableObject.m_name)
+            {
+                GameObject checklist = Instantiate(_checklistPrefab, _checklistTransform);
+                ChecklistData checklistData = checklist.GetComponent<ChecklistData>();
+                checklistData.Initialise(name);
+            }
+
+            _checklistTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, checklistScriptableObject.m_name.Count * 67f);
+            _initialScale = _checkboardWithModel.localScale;
             
+            if (!_isActiveAtStart) _checkboardWithModel.localScale = Vector3.zero;
+            if (_showCheckListAction is null) return;
+            
+            _showCheckListAction.action.Enable();
+            _showCheckListAction.action.performed += DisplayUI;
         }
 
         #endregion
@@ -96,7 +98,6 @@ namespace Checklist.Runtime
 
         [Header("Data and Reference")]
         [SerializeField] private bool _isActiveAtStart = false;
-        [SerializeField] private ChecklistScriptableObject _checklistScriptableObject;
         [SerializeField] private GameObject _checklistPrefab;
         [SerializeField] private RectTransform _checklistTransform;
         [SerializeField] private Transform _checkboardWithModel;

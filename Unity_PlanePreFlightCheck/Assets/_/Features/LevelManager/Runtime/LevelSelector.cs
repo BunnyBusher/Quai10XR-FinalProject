@@ -35,7 +35,6 @@ namespace LevelManager.Runtime
                 Debug.LogWarning("no level data on this toggle");
                 return;
             }
-            Debug.Log("Scene index " + _levelData.m_levelScene);
             SceneManager.LoadSceneAsync(_levelData.m_levelScene,LoadSceneMode.Additive).completed += StartScene;
         }
 
@@ -47,6 +46,7 @@ namespace LevelManager.Runtime
         {
             _planeInScene = plane;
             _planeInScene.SetActive(true);
+            SetFact("checklistSO",checklistSO);
         }
 
 
@@ -55,6 +55,7 @@ namespace LevelManager.Runtime
             _planeInScene.SetActive(false);
             _planeInScene = plane;
             _planeInScene.SetActive(true);
+            SetFact("checklistSO",checklistSO);
         }
 
         #endregion
@@ -66,6 +67,7 @@ namespace LevelManager.Runtime
             obj.allowSceneActivation = true;
             SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(_levelData.m_levelScene));
             SceneManager.UnloadSceneAsync(_activeScene);
+            GetFact<ChecklistDisplayer>("checklistDisplayer").InitialiseCheckBoard();
         }
 
         
