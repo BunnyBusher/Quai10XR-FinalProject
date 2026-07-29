@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3262804714348745945}
   - component: {fileID: 1750701880926870985}
   - component: {fileID: 6494103849695842032}
+  - component: {fileID: 6946866720873046584}
   m_Layer: 2
   m_Name: P_Locomotion
   m_TagString: Untagged
@@ -65,6 +66,19 @@ MonoBehaviour:
   m_BodyPositionEvaluatorObject: {fileID: 0}
   m_ConstrainedBodyManipulatorObject: {fileID: 0}
   m_UseCharacterControllerIfExists: 1
+--- !u!114 &6946866720873046584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6224440571707899622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7543b7b98e5e394ca9ef57bc073f365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: CharacterController.Runtime::CharacterController.Runtime.PlayerRegister
+  _movementObject: {fileID: 4889307685540146708}
 --- !u!1001 &241791043635156167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,6 +145,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2104275035869157689, guid: 7178d96f3057ce04a96344c0bb4a44e4, type: 3}
   m_PrefabInstance: {fileID: 241791043635156167}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2725826177559499119 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2778465725438461352, guid: 7178d96f3057ce04a96344c0bb4a44e4, type: 3}
+  m_PrefabInstance: {fileID: 241791043635156167}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4055749148249401415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -265,7 +290,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turn
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4192818527211614387, guid: fd67c00da32e336459a7b19f550daa52, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -334,8 +360,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2331488741039694707, guid: f051b10ae4b22f14391f779b8196b76a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5779076088780028333}
   m_SourcePrefab: {fileID: 100100000, guid: f051b10ae4b22f14391f779b8196b76a, type: 3}
+--- !u!1 &4889307685540146708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2331488741039694707, guid: f051b10ae4b22f14391f779b8196b76a, type: 3}
+  m_PrefabInstance: {fileID: 7170104197210918247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5779076088780028333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889307685540146708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3448c0794fe8a7a4fb604303d0245ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: CharacterController.Runtime::CharacterController.Runtime.CockpitBehaviour
+  _teleportModeExit: {fileID: 4818138257596498850, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  _teleportationProvider: {fileID: 2725826177559499119}
 --- !u!4 &8694430367585487913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1957238028624068942, guid: f051b10ae4b22f14391f779b8196b76a, type: 3}

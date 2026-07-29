@@ -44,7 +44,7 @@ namespace Checklist.Runtime
 
         #region Utils
 
-        private void DisplayUI(InputAction.CallbackContext obj)
+        private void DisplayUI(InputAction.CallbackContext ctx)
         {
             if (_tweenInProgress) return;
             bool currentState = _checkboardWithModel.gameObject.activeSelf;

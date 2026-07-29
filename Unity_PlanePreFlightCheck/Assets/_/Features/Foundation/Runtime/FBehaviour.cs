@@ -49,10 +49,9 @@ namespace Foundation.Runtime
         protected string GetText(string key) => GameManager.Runtime.GameManager.GetTextLocalised(key);
         
         //Player Controller
-        protected GameObject SetMovementOnPlayer(bool value)
+        protected void SetMovementOnPlayer(bool value)
         {
             GameManager.Runtime.GameManager.TurnPlayerLocomotion(value);
-            return GameManager.Runtime.GameManager.GetPlayerController();
         }
         
         //Math Tools

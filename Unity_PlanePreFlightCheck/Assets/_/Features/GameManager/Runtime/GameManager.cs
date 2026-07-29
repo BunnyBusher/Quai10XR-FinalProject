@@ -186,30 +186,25 @@ namespace GameManager.Runtime
             }
             return null;
         }
-
+        
+        
         public static void TurnPlayerLocomotion(bool isActivate)
         {
-            if (m_factDictionary.FacExist("playerController", out GameObject playerController))
+            if (m_factDictionary.FacExist("playerMovement", out GameObject playerMovement))
             {
-                playerController.SetActive(isActivate);
-                return;
+                playerMovement.SetActive(isActivate);
             }
+            else
+                Debug.LogWarning("No Player Movement found in Dictionnary");
             
-            Debug.LogWarning("No Character Controller found in Dictionnary");
-        }
-        
-        
-        public static GameObject GetPlayerController()
-        {
-            if (m_factDictionary.FacExist("playerController", out GameObject playerController))
+            if (m_factDictionary.FacExist("playerTeleport", out GameObject playerTeleport))
             {
-                return playerController;
+                playerTeleport.SetActive(isActivate);
             }
-            Debug.LogWarning("No Character Controller found in Dictionnary");
-            return null;
+            else
+                Debug.LogWarning("No Player Teleport found in Dictionnary");
         }
         
-
         #endregion
         
         #region Utils

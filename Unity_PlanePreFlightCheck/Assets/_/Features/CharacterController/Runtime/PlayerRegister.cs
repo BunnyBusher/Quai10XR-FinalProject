@@ -14,7 +14,8 @@ namespace CharacterController.Runtime
                 Debug.LogWarning("Character Controller not found on " + gameObject.name,gameObject);
                 return;
             }
-            SetFact("playerController",_movementObject);
+            SetFact("playerMovement",_movementObject);
+            SetFact("playerTeleport",_teleportObject);
             SetFact("playerTransform",_locomotionMediator.xrOrigin.transform);
         }
 
@@ -22,6 +23,7 @@ namespace CharacterController.Runtime
 
         private LocomotionMediator _locomotionMediator;
         [SerializeField] private GameObject _movementObject;
+        [SerializeField] private GameObject _teleportObject;
 
         #endregion
     }
