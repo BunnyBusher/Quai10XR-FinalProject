@@ -6,7 +6,6 @@ using Localisation.Runtime;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-using UnityEngine.XR.Interaction.Toolkit.Locomotion;
 
 namespace GameManager.Runtime
 {

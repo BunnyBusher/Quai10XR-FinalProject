@@ -1,4 +1,4 @@
-using System.Linq;
+using Checklist.Runtime;
 using Foundation.Runtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,6 +10,11 @@ namespace LevelManager.Runtime
     {
 
         #region Unity API
+
+        private void Awake()
+        {
+            SetFact("levelSelector",this);
+        }
 
         private void Start()
         {
@@ -24,7 +29,7 @@ namespace LevelManager.Runtime
         public void OnStartButtonLoadLevel()
         {
             _levelData = null;
-            _levelData = _toggleGroup.ActiveToggles().First().gameObject.GetComponent<LevelData>();
+            _levelData = _toggleGroup.GetFirstActiveToggle().gameObject.GetComponent<LevelData>();
             if (_levelData is null)
             {
                 Debug.LogWarning("no level data on this toggle");
@@ -32,6 +37,24 @@ namespace LevelManager.Runtime
             }
             Debug.Log("Scene index " + _levelData.m_levelScene);
             SceneManager.LoadSceneAsync(_levelData.m_levelScene,LoadSceneMode.Additive).completed += StartScene;
+        }
+
+        #endregion
+
+        #region Main Method
+
+        public void InitialisePlaneDisplay(GameObject plane, ChecklistScriptableObject checklistSO)
+        {
+            _planeInScene = plane;
+            _planeInScene.SetActive(true);
+        }
+
+
+        public void OnToggleChange(GameObject plane,ChecklistScriptableObject checklistSO)
+        {
+            _planeInScene.SetActive(false);
+            _planeInScene = plane;
+            _planeInScene.SetActive(true);
         }
 
         #endregion
@@ -45,6 +68,8 @@ namespace LevelManager.Runtime
             SceneManager.UnloadSceneAsync(_activeScene);
         }
 
+        
+
         #endregion
         
         #region Private
@@ -52,6 +77,7 @@ namespace LevelManager.Runtime
         private ToggleGroup _toggleGroup;
         private LevelData _levelData;
         private Scene _activeScene;
+        private GameObject _planeInScene;
 
         #endregion
     }

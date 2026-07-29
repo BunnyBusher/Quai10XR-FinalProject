@@ -224,6 +224,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 020f33d841c87f042a9db7a2afd95a0c, type: 3}
+--- !u!1 &152917937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2193102368281513956, guid: 020f33d841c87f042a9db7a2afd95a0c, type: 3}
+  m_PrefabInstance: {fileID: 152917936}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &425575728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -285,6 +290,77 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+--- !u!1 &425575729 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2193102368281513956, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+  m_PrefabInstance: {fileID: 425575728}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2115024270
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4563838804945209281, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+      propertyPath: m_Name
+      value: P_Plane
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149607083745974899, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149607083745974899, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149607083745974899, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149607083745974899, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.38674992
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149607083745974899, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149607083745974899, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92218465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149607083745974899, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149607083745974899, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149607083745974899, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 134.495
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149607083745974899, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433250800711795831, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+--- !u!1 &2115024271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4563838804945209281, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
+  m_PrefabInstance: {fileID: 2115024270}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &906215422008857945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -407,6 +483,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1853154817771722602, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planeKey
+      value: robinDR400
+      objectReference: {fileID: 0}
+    - target: {fileID: 1853154817771722602, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planeInScene
+      value: 
+      objectReference: {fileID: 152917937}
     - target: {fileID: 1859654634456667181, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -443,6 +527,14 @@ PrefabInstance:
       propertyPath: m_Size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2208600290194811332, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planeKey
+      value: cessna172
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208600290194811332, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planeInScene
+      value: 
+      objectReference: {fileID: 425575729}
     - target: {fileID: 3099446652143448039, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -711,10 +803,46 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7135514067227218660, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135514067227218660, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planes.Array.data[0].m_name
+      value: cessna172
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135514067227218660, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planes.Array.data[1].m_name
+      value: robinDR400
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135514067227218660, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planes.Array.data[2].m_name
+      value: greyBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135514067227218660, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planes.Array.data[0].m_planeInScene
+      value: 
+      objectReference: {fileID: 425575729}
+    - target: {fileID: 7135514067227218660, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planes.Array.data[1].m_planeInScene
+      value: 
+      objectReference: {fileID: 152917937}
+    - target: {fileID: 7135514067227218660, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planes.Array.data[2].m_planeInScene
+      value: 
+      objectReference: {fileID: 2115024271}
     - target: {fileID: 7606775135813469087, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
       propertyPath: m_Name
       value: P_MainUI
       objectReference: {fileID: 0}
+    - target: {fileID: 8127276626262612530, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planeKey
+      value: greyBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127276626262612530, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
+      propertyPath: _planeInScene
+      value: 
+      objectReference: {fileID: 2115024271}
     - target: {fileID: 8127276626262612530, guid: 5f8e014fad3b96848bba3e48e1899f9b, type: 3}
       propertyPath: _levelSceneIndex
       value: 5
@@ -779,6 +907,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 906215422008857945}
   - {fileID: 89215560}
-  - {fileID: 152917936}
-  - {fileID: 425575728}
   - {fileID: 3029840104516544551}
+  - {fileID: 425575728}
+  - {fileID: 152917936}
+  - {fileID: 2115024270}
