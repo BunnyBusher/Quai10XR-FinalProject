@@ -8,15 +8,11 @@ namespace InteractionBehaviour.Runtime
     {
         #region Unity Api
 
-        private void Awake()
-        {
-            _animator = GetComponent<Animator>();
-        }
-
+        
         private void Start()
         {
             ProgressAnimation(_startAnimationProgress);
-            _currentAnimationProgress = _animator.GetFloat("progress");
+            _currentAnimationProgress = _animator.GetFloat(_progressName);
         }
 
         private void FixedUpdate()
@@ -69,7 +65,7 @@ namespace InteractionBehaviour.Runtime
 
         private void ProgressAnimation(float progress)
         {
-            _animator.SetFloat("progress", progress);
+            _animator.SetFloat(_progressName, progress);
         }
 
         #endregion
@@ -81,7 +77,8 @@ namespace InteractionBehaviour.Runtime
         [SerializeField, Range(0f,1f)] private float _startAnimationProgress = .4f;
         private float _currentAnimationProgress;
         
-        private Animator _animator;
+        [SerializeField]private Animator _animator;
+        [SerializeField] private string _progressName;
         private bool _isGrabbed;
         private Vector3 _startGrabPosition;
         private Vector3 _currentGrabPosition;
