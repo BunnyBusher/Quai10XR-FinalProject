@@ -66,6 +66,7 @@ namespace UINavigation.Runtime
 
         private void QuitToMainMenu()
         {
+            if (SceneManager.GetActiveScene().buildIndex == 2) return;
             SceneManager.LoadSceneAsync(2, LoadSceneMode.Additive).completed +=SetMainMenu;
         }
 
