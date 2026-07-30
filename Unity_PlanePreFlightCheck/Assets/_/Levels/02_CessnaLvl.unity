@@ -400,9 +400,73 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1209148208071579076, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: _progressName
+      value: leftFlap
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209148208071579076, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: _startAnimationProgress
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446161242610254198, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2193102368281513956, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
       propertyPath: m_Name
       value: P_Cessna_172
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814865985948776502, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876471805478452769, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: _progressName
+      value: rightElevator
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876471805478452769, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: _startAnimationProgress
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344787952135398701, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: _progressName
+      value: leftElevator
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344787952135398701, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: _startAnimationProgress
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414844113288910482, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166929803141213097, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: _progressName
+      value: rightPale
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166929803141213097, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: _startAnimationProgress
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259844260977367640, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: _progressName
+      value: rightFlap
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259844260977367640, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: _startAnimationProgress
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6861084577583244180, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: _progressName
+      value: leftPale
+      objectReference: {fileID: 0}
+    - target: {fileID: 6861084577583244180, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: _startAnimationProgress
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6991514530298344668, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
