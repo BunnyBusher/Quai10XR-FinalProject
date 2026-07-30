@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Foundation.Runtime;
 using PrimeTween;
 using UnityEngine;
@@ -30,6 +31,8 @@ namespace Checklist.Runtime
         private void Start()
         {
             _checkboardWithModel.gameObject.SetActive(_isActiveAtStart);
+            _initialScale = _checkboardWithModel.localScale;
+            if (!_isActiveAtStart) _checkboardWithModel.localScale = Vector3.zero;
         }
 
 
@@ -74,21 +77,31 @@ namespace Checklist.Runtime
         {
             ChecklistScriptableObject checklistScriptableObject = GetFact<ChecklistScriptableObject>("checklistSO");
             
+            if (_togglesList.Count > 0)
+            {
+                foreach (GameObject go in _togglesList)
+                {
+                    Destroy(go);
+                }
+                _togglesList.Clear();
+                _checkboardWithModel.gameObject.SetActive(_isActiveAtStart);
+            }
+            else
+            {
+                _showCheckListAction.action.Enable();
+                _showCheckListAction.action.performed += DisplayUI;
+            }
+            
             foreach (string name in checklistScriptableObject.m_name)
             {
                 GameObject checklist = Instantiate(_checklistPrefab, _checklistTransform);
+                _togglesList.Add(checklist);
                 ChecklistData checklistData = checklist.GetComponent<ChecklistData>();
                 checklistData.Initialise(name);
             }
 
             _checklistTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, checklistScriptableObject.m_name.Count * 67f);
-            _initialScale = _checkboardWithModel.localScale;
             
-            if (!_isActiveAtStart) _checkboardWithModel.localScale = Vector3.zero;
-            if (_showCheckListAction is null) return;
-            
-            _showCheckListAction.action.Enable();
-            _showCheckListAction.action.performed += DisplayUI;
         }
 
         #endregion
@@ -108,6 +121,7 @@ namespace Checklist.Runtime
         private bool _tweenInProgress;
         [SerializeField] private Ease _displayEase = Ease.OutBounce;
         [SerializeField] private Ease _hideEase = Ease.InBounce;
+        private List<GameObject> _togglesList = new List<GameObject>();
 
         #endregion
     }
