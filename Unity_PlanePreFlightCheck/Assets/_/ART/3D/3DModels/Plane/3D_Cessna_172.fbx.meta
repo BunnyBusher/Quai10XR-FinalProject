@@ -3,7 +3,12 @@ guid: e113b0a75ebb1144890483bca82ffd4d
 ModelImporter:
   serializedVersion: 24400
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Cessna_172
+    second: {fileID: 2100000, guid: aeea5a86faed3a845bfb0afcfadb6366, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
