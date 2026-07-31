@@ -1,14 +1,31 @@
 using Checklist.Runtime;
 using Foundation.Runtime;
+using PrimeTween;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace LevelManager.Runtime
 {
+    [DefaultExecutionOrder(5)]
     public class LevelSelector : FBehaviour
     {
+        #region Public
 
+        public bool m_isDoorTweenOn
+        {
+            get
+            {
+                return _isDoorTweenOn;
+            }
+        }
+            
+        
+
+        #endregion
+        
+        
+        
         #region Unity API
 
         private void Awake()
@@ -20,6 +37,7 @@ namespace LevelManager.Runtime
         {
             _activeScene = SceneManager.GetActiveScene();
             _toggleGroup = GetComponent<ToggleGroup>();
+            OpenDoor();
         }
 
         #endregion
@@ -37,10 +55,7 @@ namespace LevelManager.Runtime
             }
             SceneManager.LoadSceneAsync(_levelData.m_levelScene,LoadSceneMode.Additive).completed += StartScene;
         }
-
-        #endregion
-
-        #region Main Method
+        
 
         public void InitialisePlaneDisplay(GameObject plane, ChecklistScriptableObject checklistSO)
         {
@@ -52,10 +67,20 @@ namespace LevelManager.Runtime
 
         public void OnToggleChange(GameObject plane,ChecklistScriptableObject checklistSO)
         {
-            _planeInScene.SetActive(false);
-            _planeInScene = plane;
-            _planeInScene.SetActive(true);
-            SetFact("checklistSO",checklistSO);
+            if (_isDoorTweenOn) return;
+            
+            _isDoorTweenOn = true;
+            Sequence.Create()
+                .Group(Tween.LocalPositionZ(_rightDoor, 0, _closeDuration, _closeEase))
+                .Group(Tween.LocalPositionZ(_leftDoor, 0, _closeDuration, _closeEase)).OnComplete(() =>
+                {
+                    _planeInScene.SetActive(false);
+                    _planeInScene = plane;
+                    SetFact("checklistSO", checklistSO);
+                    _planeInScene.SetActive(true);
+                    Sequence.Create()
+                        .Chain(Tween.Delay(_waitDuration)).OnComplete(OpenDoor);
+                });
         }
 
         #endregion
@@ -70,11 +95,34 @@ namespace LevelManager.Runtime
             GetFact<ChecklistDisplayer>("checklistDisplayer").InitialiseCheckBoard();
         }
 
+        private void OpenDoor()
+        {
+            Debug.Log("Open door");
+            _isDoorTweenOn = true;
+            Sequence.Create()
+                .Group(Tween.LocalPositionZ(_rightDoor, -5f, _openDuration, _openEase))
+                .Group(Tween.LocalPositionZ(_leftDoor, 5f, _openDuration, _openEase)).OnComplete(()=> _isDoorTweenOn = false);
+        }
+
         
 
         #endregion
         
         #region Private
+
+
+        [Header("Plane Transition Tween")] 
+        [SerializeField] private Transform _rightDoor;
+        [SerializeField] private Transform _leftDoor;
+        [SerializeField] private float _closeDuration = .35f;
+        [SerializeField] private Ease _closeEase = Ease.OutBounce;
+        [SerializeField] private float _waitDuration = .25f;
+        
+        [SerializeField] private float _openDuration = .5f;
+        [SerializeField] private Ease _openEase = Ease.InBounce;
+        
+        private bool _isDoorTweenOn = false;
+        
 
         private ToggleGroup _toggleGroup;
         private LevelData _levelData;
