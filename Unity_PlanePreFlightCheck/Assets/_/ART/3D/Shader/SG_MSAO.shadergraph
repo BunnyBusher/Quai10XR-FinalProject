@@ -834,7 +834,7 @@
     "m_ZTestMode": 4,
     "m_ZWriteControl": 1,
     "m_AlphaMode": 0,
-    "m_RenderFace": 2,
+    "m_RenderFace": 0,
     "m_AlphaClip": false,
     "m_CastShadows": true,
     "m_ReceiveShadows": true,
@@ -1358,7 +1358,7 @@
     "m_ObjectId": "3c4bf8f433814d1f9aa0287d9bce3325",
     "m_Title": "MSAO",
     "m_Position": {
-        "x": -670.0,
+        "x": -669.9998779296875,
         "y": 384.0
     }
 }
@@ -2715,7 +2715,7 @@
     "m_ObjectId": "76735895b722428eb4583a88686c162c",
     "m_Title": "Emissive",
     "m_Position": {
-        "x": -671.0,
+        "x": -670.9998779296875,
         "y": 888.0
     }
 }
@@ -2818,8 +2818,8 @@
     "m_ObjectId": "809e86fe0eea4ee7a4b1e463f886b0e6",
     "m_Title": "Map",
     "m_Position": {
-        "x": -1007.9999389648438,
-        "y": 169.0
+        "x": -1007.9998779296875,
+        "y": 168.9999542236328
     }
 }
 
@@ -2830,7 +2830,7 @@
     "m_Title": "Normal",
     "m_Position": {
         "x": -659.9999389648438,
-        "y": -7.0
+        "y": -7.000030517578125
     }
 }
 
@@ -3398,8 +3398,8 @@
     "m_ObjectId": "a9afc9fea0a84abe88e7c46ad3b12779",
     "m_Title": "Albedo",
     "m_Position": {
-        "x": -658.0,
-        "y": -393.9999694824219
+        "x": -657.9998779296875,
+        "y": -394.0
     }
 }
 
