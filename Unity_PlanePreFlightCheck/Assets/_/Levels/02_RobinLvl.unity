@@ -311,6 +311,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3482628491996215522, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.345
+      objectReference: {fileID: 0}
     - target: {fileID: 3972082994338121281, guid: a8846df036cbd414d850dd257be71b21, type: 3}
       propertyPath: m_Color.b
       value: 0.894
@@ -330,6 +334,14 @@ PrefabInstance:
     - target: {fileID: 3972082994338121281, guid: a8846df036cbd414d850dd257be71b21, type: 3}
       propertyPath: m_Shadows.m_NormalBias
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305932067115709374, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+      propertyPath: m_FarClip
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305932067115709374, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+      propertyPath: m_NearClip
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5242115884237826314, guid: a8846df036cbd414d850dd257be71b21, type: 3}
       propertyPath: m_Name
