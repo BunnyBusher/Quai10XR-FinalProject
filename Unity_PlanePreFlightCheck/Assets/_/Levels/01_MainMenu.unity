@@ -6975,7 +6975,7 @@ MonoBehaviour:
   bakedScaleOffsetTerrain: []
   assetList: []
   uvOverlapAssetList: 
-  idremap: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000
+  idremap: 1800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000
   usesRealtimeGI: 0
   emptyDirectionTex: {fileID: 0}
   anyVolumes: 0
@@ -19452,7 +19452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4563838804945209281, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5149607083745974899, guid: 1547c199bb1337842a4c5cc7ce996608, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19565,9 +19565,217 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 441218117005241141, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 441218117005241141, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 441218117005241141, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 441218117005241141, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 706677987692384095, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606215994133742518, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606215994133742518, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606215994133742518, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606215994133742518, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606215994133742518, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606215994133742518, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NormalBias
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671894998491221444, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2051631493956528318, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588815197114871932, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588815197114871932, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588815197114871932, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588815197114871932, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588815197114871932, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588815197114871932, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NormalBias
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117908735942923560, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127661867978899025, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261292580675497921, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261292580675497921, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261292580675497921, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261292580675497921, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 3313289108885925623, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528728394901562102, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577071741143820467, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577071741143820467, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577071741143820467, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577071741143820467, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577071741143820467, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577071741143820467, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NormalBias
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901232694172819603, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3911002843801639209, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175734699253005858, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175734699253005858, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175734699253005858, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175734699253005858, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177257352777752071, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177257352777752071, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177257352777752071, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177257352777752071, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 4265155899556007555, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4526658577307064752, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4926767272898200375, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
       propertyPath: m_Name
       value: P_HangarMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098954240644485535, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5569320336878072817, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5569320336878072817, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 5569320336878072817, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5569320336878072817, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5569320336878072817, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5569320336878072817, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NormalBias
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6353971412216375892, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19607,6 +19815,194 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6353971412216375892, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611489833405111710, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752511229470399605, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752511229470399605, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752511229470399605, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752511229470399605, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786675790751655024, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786675790751655024, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786675790751655024, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786675790751655024, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786675790751655024, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786675790751655024, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NormalBias
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7235648367609684113, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657047234054151127, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704776374883325889, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704776374883325889, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704776374883325889, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704776374883325889, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704776374883325889, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704776374883325889, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NormalBias
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781406321654987833, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781406321654987833, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781406321654987833, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781406321654987833, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853548198341156872, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947492186759080795, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947492186759080795, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947492186759080795, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947492186759080795, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135773724808090002, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135773724808090002, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135773724808090002, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135773724808090002, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227142478524207103, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227142478524207103, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227142478524207103, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227142478524207103, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227142478524207103, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227142478524207103, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NormalBias
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8640490999226757223, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8640490999226757223, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_SpotAngle
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 8640490999226757223, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8640490999226757223, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 73.35644
+      objectReference: {fileID: 0}
+    - target: {fileID: 8640490999226757223, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8640490999226757223, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_Shadows.m_NormalBias
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740128301281888233, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748676574882262160, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9220293369997638710, guid: ba6d8fe1c736846419d7c37d58c4a946, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
