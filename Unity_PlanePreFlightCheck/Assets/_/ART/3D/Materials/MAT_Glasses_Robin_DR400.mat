@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MAT_Glasses_Robin_DR400
-  m_Shader: {fileID: -6465566751694194690, guid: bf6ebc45a05ec0543b05efe50d99fcf3, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 77723404014a1944fb202b5c8cff056e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -98,7 +98,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AO_Strength: 0.5
+    - _AO_Strength: 1
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
@@ -118,7 +118,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Metalic_Strength: 0.75
+    - _Metalic_Strength: 1
     - _Metallic: 0
     - _Normal_Strength: 0
     - _OcclusionStrength: 1
@@ -128,7 +128,7 @@ Material:
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
-    - _Smoothness_Strength: 0.25
+    - _Smoothness_Strength: 1
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
