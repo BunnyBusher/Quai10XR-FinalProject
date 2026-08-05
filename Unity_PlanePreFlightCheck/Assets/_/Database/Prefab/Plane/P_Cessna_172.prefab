@@ -282,10 +282,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4257258bd8219ba4cb795e21c42beb50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: InteractionBehaviour.Runtime::InteractionBehaviour.Runtime.GrabAnimationBehaviour
-  _animationMultiplier: 2
+  _animationMultiplier: -2
   _startAnimationProgress: 0.5
   _animator: {fileID: 6801424375014500595}
-  _progressName: rightPale
+  _progressName: leftPale
   _isLeftRight: 0
 --- !u!1 &3788504819131266460
 GameObject:
