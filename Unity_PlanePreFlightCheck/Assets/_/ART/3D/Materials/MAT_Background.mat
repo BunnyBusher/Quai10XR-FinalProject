@@ -69,11 +69,11 @@ Material:
     m_Floats:
     - _AO_Strength: 1
     - _Emissive_ON_OFF: 1
-    - _Metalic_Strength: 0.35
+    - _Metalic_Strength: 0.9
     - _Normal_Strength: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothness_Strength: 1
+    - _Smoothness_Strength: 0.9
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _HDR: {r: 4, g: 4, b: 4, a: 1}
