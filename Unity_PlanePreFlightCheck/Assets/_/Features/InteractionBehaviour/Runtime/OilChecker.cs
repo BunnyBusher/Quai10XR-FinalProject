@@ -9,7 +9,7 @@ namespace InteractionBehaviour.Runtime
         public void OnSelectEnter()
         {
             bool isOpenOilAnimationParameter = _animator.GetBool("openOil");
-            bool isCloseOilAnimationParameter = _animator.GetBool("closeOil");
+            bool isCloseOilAnimationParameter = _animator.GetBool("closingOil");
             
             
             if (!isOpenOilAnimationParameter && !isCloseOilAnimationParameter)

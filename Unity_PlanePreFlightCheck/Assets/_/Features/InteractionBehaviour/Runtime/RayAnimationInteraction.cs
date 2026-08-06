@@ -27,7 +27,13 @@ namespace InteractionBehaviour.Runtime
             else if (!_isSelected && _progress > 0f)
             {
                 _progress -= Time.fixedDeltaTime * _speedMultiplier;
+                if (_oilChecker.activeSelf)
+                {
+                    _oilChecker.SetActive(false);
+                }
             }
+            
+            
             _animator.SetFloat(_progressName, _progress);
         }
 
@@ -37,6 +43,7 @@ namespace InteractionBehaviour.Runtime
 
         public  void OnSelecterEnter()
         {
+            Debug.Log("OnSelecterEnter");
             if (_animator.GetBool("openOil")) return;
             _isSelected = !_isSelected;
         }
