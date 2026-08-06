@@ -2867,6 +2867,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8588603721785518623, guid: e2fbc71edb87d254a84d4620600ffd70, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6b05cea13c48e1e4bb16d9b43597f819, type: 2}
     - target: {fileID: -8572517770637531955, guid: e2fbc71edb87d254a84d4620600ffd70, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -3007,6 +3011,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 82b3a098e068e6e498c7f9e1542d94f8, type: 2}
+    - target: {fileID: -4160962002642427877, guid: e2fbc71edb87d254a84d4620600ffd70, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6b05cea13c48e1e4bb16d9b43597f819, type: 2}
     - target: {fileID: -3666166569928340295, guid: e2fbc71edb87d254a84d4620600ffd70, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -3067,6 +3075,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 103180914579431193, guid: e2fbc71edb87d254a84d4620600ffd70, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6b05cea13c48e1e4bb16d9b43597f819, type: 2}
     - target: {fileID: 572160453511448897, guid: e2fbc71edb87d254a84d4620600ffd70, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -3086,7 +3098,7 @@ PrefabInstance:
     - target: {fileID: 746298236113090165, guid: e2fbc71edb87d254a84d4620600ffd70, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 82b3a098e068e6e498c7f9e1542d94f8, type: 2}
+      objectReference: {fileID: 2100000, guid: 6b05cea13c48e1e4bb16d9b43597f819, type: 2}
     - target: {fileID: 764651832738322220, guid: e2fbc71edb87d254a84d4620600ffd70, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
