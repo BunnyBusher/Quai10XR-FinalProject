@@ -647,6 +647,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4456111194547260714, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+      propertyPath: m_RenderingLayersMask.m_Bits
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5242115884237826314, guid: a8846df036cbd414d850dd257be71b21, type: 3}
       propertyPath: m_Name
       value: P_Hangar
