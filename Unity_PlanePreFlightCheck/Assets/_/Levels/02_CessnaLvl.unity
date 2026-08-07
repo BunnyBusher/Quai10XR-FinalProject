@@ -615,6 +615,10 @@ PrefabInstance:
       propertyPath: m_InnerSpotAngle
       value: 82.69021
       objectReference: {fileID: 0}
+    - target: {fileID: 476701890271981116, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+      propertyPath: m_Intensity
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3145731222462558125, guid: a8846df036cbd414d850dd257be71b21, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -657,7 +661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4866640359579822722, guid: a8846df036cbd414d850dd257be71b21, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5242115884237826314, guid: a8846df036cbd414d850dd257be71b21, type: 3}
       propertyPath: m_Name

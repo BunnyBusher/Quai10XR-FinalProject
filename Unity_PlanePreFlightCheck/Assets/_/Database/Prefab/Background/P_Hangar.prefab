@@ -106,8 +106,8 @@ Light:
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 61.1
   m_Range: 25
-  m_SpotAngle: 66.15217
-  m_InnerSpotAngle: 66.15217
+  m_SpotAngle: 110.44681
+  m_InnerSpotAngle: 110.44681
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -1322,7 +1322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3133627507511987715
 Transform:
   m_ObjectHideFlags: 0
@@ -1331,13 +1331,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4866640359579822722}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.22925547, y: -0.71527565, z: 0.10289937, w: 0.65209997}
-  m_LocalPosition: {x: 9.044, y: 5.425, z: 0.65899706}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.956, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3145731222462558125}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!108 &476701890271981116
 Light:
   m_ObjectHideFlags: 0
@@ -1349,13 +1349,13 @@ Light:
   serializedVersion: 13
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 2
+  m_Intensity: 0.2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1387,7 +1387,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingLayerMask: 3
+  m_RenderingLayerMask: 6
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
@@ -1423,10 +1423,10 @@ MonoBehaviour:
   m_SoftShadowQuality: 0
   m_RenderingLayersMask:
     serializedVersion: 0
-    m_Bits: 2
+    m_Bits: 4
   m_ShadowRenderingLayersMask:
     serializedVersion: 0
-    m_Bits: 3
+    m_Bits: 6
   m_Version: 4
   m_LightLayerMask: 1
   m_ShadowLayerMask: 1
