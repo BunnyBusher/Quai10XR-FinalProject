@@ -97,7 +97,6 @@ namespace LevelManager.Runtime
 
         private void OpenDoor()
         {
-            Debug.Log("Open door");
             _isDoorTweenOn = true;
             Sequence.Create()
                 .Group(Tween.LocalPositionZ(_rightDoor, -5f, _openDuration, _openEase))

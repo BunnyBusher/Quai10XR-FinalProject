@@ -6,30 +6,41 @@ namespace InteractionBehaviour.Runtime
     {
         #region Unity API
 
+        private void Awake()
+        {
+            if (_checkerGameObject == null) return;
+            _checkerGameObject.GetComponent<CheckerBehaviour>().GetParameterName(_openCheckParameter, _closeCheckParameter);
+        }
+
         private void Start()
         {
-            _oilChecker.SetActive(false);
+            if (_checkerGameObject == null) return;
+            _checkerGameObject.SetActive(false);
         }
 
         private  void FixedUpdate()
         {
-            if (_animator.GetBool("openOil")) return;
+            if (_animator.GetBool(_openCheckParameter)) return;
             
             if (_isSelected && _progress < 1f)
             {
                 _progress += Time.fixedDeltaTime * _speedMultiplier;
-                if (_progress >= .9f) _oilChecker.SetActive(true);
-                else if (_oilChecker.activeSelf)
+                if (_checkerGameObject)
                 {
-                    _oilChecker.SetActive(false);
+                    if (_progress >= .9f) _checkerGameObject.SetActive(true);
+                    else if (_checkerGameObject.activeSelf)
+                    {
+                        _checkerGameObject.SetActive(false);
+                    }
                 }
             }
             else if (!_isSelected && _progress > 0f)
             {
                 _progress -= Time.fixedDeltaTime * _speedMultiplier;
-                if (_oilChecker.activeSelf)
+                
+                if (_checkerGameObject && _checkerGameObject.activeSelf)
                 {
-                    _oilChecker.SetActive(false);
+                    _checkerGameObject.SetActive(false);
                 }
             }
             
@@ -43,8 +54,7 @@ namespace InteractionBehaviour.Runtime
 
         public  void OnSelecterEnter()
         {
-            Debug.Log("OnSelecterEnter");
-            if (_animator.GetBool("openOil")) return;
+            if (_animator.GetBool(_openCheckParameter) || _animator.GetBool((_closeCheckParameter))) return;
             _isSelected = !_isSelected;
         }
         
@@ -56,7 +66,9 @@ namespace InteractionBehaviour.Runtime
         [SerializeField] private Animator _animator;
         [SerializeField] private float _speedMultiplier;
         [SerializeField] private string _progressName;
-        [SerializeField] private GameObject _oilChecker;
+        [SerializeField] private GameObject _checkerGameObject;
+        [SerializeField] private string _openCheckParameter;
+        [SerializeField] private string _closeCheckParameter;
         private bool _isSelected;
         private float _progress;
         

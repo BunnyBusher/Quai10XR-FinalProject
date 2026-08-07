@@ -53,7 +53,6 @@ namespace InteractionBehaviour.Runtime
 
         public void OnSelectEnter(SelectEnterEventArgs enterEventArgs)
         {
-            Debug.Log("EnterDone");
             _isGrabbed = true;
             Vector3 initialPosition = enterEventArgs.interactorObject.transform.position;
             
@@ -67,7 +66,6 @@ namespace InteractionBehaviour.Runtime
 
         public void OnSelectExit(SelectExitEventArgs exitEventArgs)
         {
-            Debug.Log("ExitDone");
             _isGrabbed = false;
             _grabTransform = null;
         }
