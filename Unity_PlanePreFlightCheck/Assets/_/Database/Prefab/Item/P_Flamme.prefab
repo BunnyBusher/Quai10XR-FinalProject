@@ -316,6 +316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_HightLight
       objectReference: {fileID: 0}
+    - target: {fileID: 579236100257430533, guid: f0001e14f29f5754eac71db5ed26667e, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3402402077888253741, guid: f0001e14f29f5754eac71db5ed26667e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -447,7 +451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 466c38e7666e82b40bfb62fd0a2bdddc, type: 3}
       propertyPath: m_RenderingLayerMask
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 466c38e7666e82b40bfb62fd0a2bdddc, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

@@ -106,8 +106,8 @@ Light:
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 61.1
   m_Range: 25
-  m_SpotAngle: 110.44681
-  m_InnerSpotAngle: 110.44681
+  m_SpotAngle: 82.69021
+  m_InnerSpotAngle: 82.69021
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -1317,7 +1317,7 @@ GameObject:
   - component: {fileID: 476701890271981116}
   - component: {fileID: 4456111194547260714}
   m_Layer: 0
-  m_Name: Directional Light (2)
+  m_Name: UnderLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1331,13 +1331,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4866640359579822722}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0.8343411, y: 0.11239453, z: -0.18496946, w: 0.50698}
   m_LocalPosition: {x: 0, y: -0.956, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3145731222462558125}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -53.553, y: 134.652, z: -140.846}
 --- !u!108 &476701890271981116
 Light:
   m_ObjectHideFlags: 0
@@ -1349,7 +1349,7 @@ Light:
   serializedVersion: 13
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 0.1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
