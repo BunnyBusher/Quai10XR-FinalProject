@@ -2783,7 +2783,7 @@ MonoBehaviour:
   m_RaycastUIDocumentTriggerInteraction: 1
   m_TargetNumCurveSegments: 1
   m_HitDetectionType: 2
-  m_CastDistance: 10
+  m_CastDistance: 2.5
   m_SphereCastRadius: 0.1
   m_ConeCastAngle: 6
   m_LiveConeCastDebugVisuals: 0
@@ -3303,6 +3303,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3699393137949502232, guid: b6febb7da1986d74592253540bc97bf3, type: 3}
+      propertyPath: m_Value
+      value: -0.00000678169
+      objectReference: {fileID: 0}
     - target: {fileID: 3743733084457432254, guid: b6febb7da1986d74592253540bc97bf3, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3314,6 +3318,10 @@ PrefabInstance:
     - target: {fileID: 3743733084457432254, guid: b6febb7da1986d74592253540bc97bf3, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441498082222397036, guid: b6febb7da1986d74592253540bc97bf3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 36.00032
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

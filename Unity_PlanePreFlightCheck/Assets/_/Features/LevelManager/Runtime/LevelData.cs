@@ -44,11 +44,17 @@ namespace LevelManager.Runtime
             m_OnToggleTrue += _levelSelector.OnToggleChange;
         }
 
-        
+        private void LateUpdate()
+        {
+            if (_levelSelector.m_isDoorTweenOn && _toggle.interactable)
+                _toggle.interactable = false;
+            else if (!_levelSelector.m_isDoorTweenOn && !_toggle.interactable)
+                _toggle.interactable = true;
+        }
 
         private void OnDisable()
         {
-            _toggle.onValueChanged.AddListener(SendLevelData);
+            _toggle.onValueChanged.RemoveListener(SendLevelData);
             m_OnToggleTrue -= _levelSelector.OnToggleChange;
         }
 
@@ -58,7 +64,8 @@ namespace LevelManager.Runtime
         
         private void SendLevelData(bool value)
         {
-            m_OnToggleTrue?.Invoke(_planeInScene,_checklistSOForLevel);
+            if (value)
+                m_OnToggleTrue?.Invoke(_planeInScene,_checklistSOForLevel);
         }
 
         #endregion

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -6,7 +5,8 @@ namespace InteractionBehaviour.Runtime
 {
     public class GrabAnimationBehaviour : MonoBehaviour
     {
-        #region Unity Api
+
+       #region Unity Api
 
         
         private void Start()
@@ -18,15 +18,27 @@ namespace InteractionBehaviour.Runtime
         private void FixedUpdate()
         {
             if (!_isGrabbed) return;
+            
             if (!_grabTransform) return;
             if (!_animator) return;
             
             _currentGrabPosition = _grabTransform.position;
-            _currentGrabPosition.x = 0f;
+            
             _currentGrabPosition.z = 0f;
             
+            if (_isLeftRight)
+            {
+                _currentGrabPosition.y = 0f;
+                _distanceSign = Mathf.Sign(_currentGrabPosition.x - _startGrabPosition.x);
+            }
+            else
+            {
+                _currentGrabPosition.x = 0f;
+                _distanceSign = Mathf.Sign(_currentGrabPosition.y - _startGrabPosition.y);
+            }
+            
+            
             _distance = Vector3.Magnitude(_currentGrabPosition - _startGrabPosition);
-            _distanceSign = Mathf.Sign(_currentGrabPosition.y - _startGrabPosition.y);
             
 
             float progressDistance = _distance * _animationMultiplier * _distanceSign;
@@ -37,15 +49,16 @@ namespace InteractionBehaviour.Runtime
 
         #endregion
 
-        #region Public Method
+        #region Main Method
 
         public void OnSelectEnter(SelectEnterEventArgs enterEventArgs)
         {
-            Debug.Log("EnterDone");
             _isGrabbed = true;
             Vector3 initialPosition = enterEventArgs.interactorObject.transform.position;
-            initialPosition.x = 0f;
-            initialPosition.z = 0f;
+            
+            if (_isLeftRight) initialPosition.y = 0f;
+            else initialPosition.x = 0f;
+            
             initialPosition.z = 0f;
             _startGrabPosition = initialPosition;
             _grabTransform = enterEventArgs.interactorObject.transform;
@@ -53,7 +66,6 @@ namespace InteractionBehaviour.Runtime
 
         public void OnSelectExit(SelectExitEventArgs exitEventArgs)
         {
-            Debug.Log("ExitDone");
             _isGrabbed = false;
             _grabTransform = null;
         }
@@ -70,7 +82,7 @@ namespace InteractionBehaviour.Runtime
 
         #endregion
         
-        #region Private
+        #region Private and protected
 
 
         [SerializeField] private float _animationMultiplier = 2f;
@@ -79,6 +91,7 @@ namespace InteractionBehaviour.Runtime
         
         [SerializeField]private Animator _animator;
         [SerializeField] private string _progressName;
+        [SerializeField] private bool _isLeftRight = false;
         private bool _isGrabbed;
         private Vector3 _startGrabPosition;
         private Vector3 _currentGrabPosition;
