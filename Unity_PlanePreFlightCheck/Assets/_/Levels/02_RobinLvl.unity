@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 209296603}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -127,14 +127,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 476701890271981116, guid: a8846df036cbd414d850dd257be71b21, type: 3}
-      propertyPath: m_Intensity
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 476701890271981116, guid: a8846df036cbd414d850dd257be71b21, type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3145731222462558125, guid: a8846df036cbd414d850dd257be71b21, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -175,27 +167,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4456111194547260714, guid: a8846df036cbd414d850dd257be71b21, type: 3}
-      propertyPath: m_ShadowRenderingLayersMask.m_Bits
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4866640359579822722, guid: a8846df036cbd414d850dd257be71b21, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5242115884237826314, guid: a8846df036cbd414d850dd257be71b21, type: 3}
       propertyPath: m_Name
       value: P_Hangar
-      objectReference: {fileID: 0}
-    - target: {fileID: 5825135116617579459, guid: a8846df036cbd414d850dd257be71b21, type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+--- !u!108 &209296603 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 174182267821277534, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+  m_PrefabInstance: {fileID: 209296601}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &861004526
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,61 +686,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 020f33d841c87f042a9db7a2afd95a0c, type: 3}
---- !u!1 &1706838552
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1706838554}
-  - component: {fileID: 1706838553}
-  m_Layer: 0
-  m_Name: ProbeVolumePerSceneData
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1706838553
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1706838552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83d2f7ae04ab6f4f99b0d85377be998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.ProbeVolumePerSceneData
-  serializedBakingSet: {fileID: 11400000, guid: 00b29ac5450782b4f97426acab26deb6, type: 2}
-  sceneGUID: 5aa89c3a8fb3c1247bb692d8a59b2287
-  obsoleteAsset: {fileID: 0}
-  obsoleteCellSharedDataAsset: {fileID: 0}
-  obsoleteCellSupportDataAsset: {fileID: 0}
-  obsoleteSerializedScenarios: []
---- !u!4 &1706838554
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1706838552}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 209296601}
   - {fileID: 1457895189}
-  - {fileID: 1706838554}
   - {fileID: 861004529}
