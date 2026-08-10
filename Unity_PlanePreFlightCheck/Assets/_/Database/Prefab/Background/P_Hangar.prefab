@@ -1897,7 +1897,6 @@ GameObject:
   - component: {fileID: 5436257486619142534}
   - component: {fileID: 4681658440485813891}
   - component: {fileID: 5825135116617579459}
-  - component: {fileID: 1649543334981584661}
   m_Layer: 0
   m_Name: 3d_Ground (1)
   m_TagString: Untagged
@@ -1977,28 +1976,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1649543334981584661
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6949532677071660244}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &7241935719437540487
 GameObject:
   m_ObjectHideFlags: 0
@@ -17285,7 +17262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2023399022197732480, guid: 3e5fc2bd13fc5ce40a8e5eda4393aab1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.045
       objectReference: {fileID: 0}
     - target: {fileID: 2023399022197732480, guid: 3e5fc2bd13fc5ce40a8e5eda4393aab1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17325,7 +17302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5592337636467329444, guid: 3e5fc2bd13fc5ce40a8e5eda4393aab1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5592337636467329444, guid: 3e5fc2bd13fc5ce40a8e5eda4393aab1, type: 3}
       propertyPath: m_LocalScale.y
@@ -17333,7 +17310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5592337636467329444, guid: 3e5fc2bd13fc5ce40a8e5eda4393aab1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3594449845736833382, guid: 3e5fc2bd13fc5ce40a8e5eda4393aab1, type: 3}

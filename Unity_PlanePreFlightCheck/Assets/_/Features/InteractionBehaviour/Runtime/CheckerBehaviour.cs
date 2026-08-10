@@ -36,8 +36,8 @@ namespace InteractionBehaviour.Runtime
 
         [SerializeField]private Animator _animator;
         
-        private string _openCheckParameter;
-        private string _closeCheckParameter;
+        [SerializeField] private string _openCheckParameter;
+        [SerializeField] private string _closeCheckParameter;
 
         #endregion
     }
