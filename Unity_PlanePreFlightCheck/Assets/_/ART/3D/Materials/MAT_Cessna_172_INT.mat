@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MAT_Cssna_172_INT
+  m_Name: MAT_Cessna_172_INT
   m_Shader: {fileID: -6465566751694194690, guid: 77723404014a1944fb202b5c8cff056e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -25,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Albedo:
-        m_Texture: {fileID: 2800000, guid: 74067359c9784d34f9eba94447f7ef6a, type: 3}
+        m_Texture: {fileID: 2800000, guid: ffd7772d3b2239e41baee279a059f591, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -57,7 +57,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MSAO:
-        m_Texture: {fileID: 2800000, guid: cd273fd58163fde4f8be4fdef89fa54e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3893e8b2215e7d84284e47613d76f7d9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -69,7 +69,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
-        m_Texture: {fileID: 2800000, guid: 1195e46dadeac374781dcba9414c8407, type: 3}
+        m_Texture: {fileID: 2800000, guid: cbeab1ae7ea305d498be7aa615aa20c1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
