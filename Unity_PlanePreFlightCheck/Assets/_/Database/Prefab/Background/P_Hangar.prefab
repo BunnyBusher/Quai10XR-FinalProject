@@ -3239,7 +3239,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1212769350500914299, guid: 9ebd5b42dd6356249a689fa74e45b127, type: 3}
       propertyPath: m_Intensity
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1212769350500914299, guid: 9ebd5b42dd6356249a689fa74e45b127, type: 3}
       propertyPath: m_Lightmapping
@@ -3702,6 +3702,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8609847181470189709, guid: 9ebd5b42dd6356249a689fa74e45b127, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7789361279091424372, guid: 9ebd5b42dd6356249a689fa74e45b127, type: 3}
@@ -4135,7 +4139,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1212769350500914299, guid: 9ebd5b42dd6356249a689fa74e45b127, type: 3}
       propertyPath: m_Intensity
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1212769350500914299, guid: 9ebd5b42dd6356249a689fa74e45b127, type: 3}
       propertyPath: m_Lightmapping
@@ -7094,7 +7098,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1212769350500914299, guid: 9ebd5b42dd6356249a689fa74e45b127, type: 3}
       propertyPath: m_Intensity
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1212769350500914299, guid: 9ebd5b42dd6356249a689fa74e45b127, type: 3}
       propertyPath: m_Lightmapping
@@ -7317,7 +7321,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1212769350500914299, guid: 9ebd5b42dd6356249a689fa74e45b127, type: 3}
       propertyPath: m_Intensity
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1212769350500914299, guid: 9ebd5b42dd6356249a689fa74e45b127, type: 3}
       propertyPath: m_Lightmapping
@@ -9210,7 +9214,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1212769350500914299, guid: 9ebd5b42dd6356249a689fa74e45b127, type: 3}
       propertyPath: m_Intensity
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1212769350500914299, guid: 9ebd5b42dd6356249a689fa74e45b127, type: 3}
       propertyPath: m_Lightmapping
