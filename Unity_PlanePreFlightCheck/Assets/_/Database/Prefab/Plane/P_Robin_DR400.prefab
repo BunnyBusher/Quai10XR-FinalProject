@@ -3423,6 +3423,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2379368471405023700, guid: f09682c4b9bf9df4294cc18585cc3afd, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379368471405023700, guid: f09682c4b9bf9df4294cc18585cc3afd, type: 3}
       propertyPath: m_RenderingLayerMask
       value: 5
       objectReference: {fileID: 0}
