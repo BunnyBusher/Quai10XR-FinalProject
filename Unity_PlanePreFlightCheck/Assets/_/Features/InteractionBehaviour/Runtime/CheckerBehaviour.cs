@@ -20,7 +20,14 @@ namespace InteractionBehaviour.Runtime
             if (!isOpenOilAnimationParameter && !isCloseOilAnimationParameter)
                 _animator.SetBool(_openCheckParameter, true);
             else if (!isOpenOilAnimationParameter && isCloseOilAnimationParameter)
-                _animator.SetBool(_closeCheckParameter, false);
+            {
+                if (_isFuelCheck)
+                {
+                    _animator.SetBool(_checkParameter, true);
+                }
+                else 
+                    _animator.SetBool(_closeCheckParameter, false);
+            }
         }
 
         public void GetParameterName(string open, string close)
@@ -28,7 +35,7 @@ namespace InteractionBehaviour.Runtime
             _openCheckParameter = open;
             _closeCheckParameter = close;
         }
-
+        
         
         #endregion
 
@@ -38,6 +45,8 @@ namespace InteractionBehaviour.Runtime
         
         [SerializeField] private string _openCheckParameter;
         [SerializeField] private string _closeCheckParameter;
+        [SerializeField] private bool _isFuelCheck;
+        [SerializeField] private string _checkParameter;
 
         #endregion
     }

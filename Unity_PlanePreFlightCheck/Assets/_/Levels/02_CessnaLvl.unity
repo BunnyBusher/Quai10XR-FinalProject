@@ -651,6 +651,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Hangar
       objectReference: {fileID: 0}
+    - target: {fileID: 5717585559092324818, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+      propertyPath: m_Intensity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379156433387848609, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379156433387848609, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5863
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
