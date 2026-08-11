@@ -647,6 +647,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4866640359579822722, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5242115884237826314, guid: a8846df036cbd414d850dd257be71b21, type: 3}
       propertyPath: m_Name
       value: P_Hangar
@@ -723,6 +727,10 @@ PrefabInstance:
     - target: {fileID: 2193102368281513956, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
       propertyPath: m_Name
       value: P_Cessna_172
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033358848274406074, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
