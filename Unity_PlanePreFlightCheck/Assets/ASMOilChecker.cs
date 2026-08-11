@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AutonomousStateMachine : StateMachineBehaviour
+public class ASMOilChecker : StateMachineBehaviour
 {
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {

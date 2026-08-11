@@ -255,6 +255,8 @@ MonoBehaviour:
   _animator: {fileID: 6801424375014500595}
   _openCheckParameter: openFuelBotLeft
   _closeCheckParameter: closingFuelBotLeft
+  _isFuelCheck: 1
+  _checkParameter: checkFuelBotLeft
 --- !u!135 &4233967440690384716
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1078,12 +1080,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3866087904231161297}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.0000040578902, z: -0.0000104951905, w: 1}
-  m_LocalPosition: {x: -1.4015117, y: 0.018815205, z: 0}
+  m_LocalRotation: {x: -0.7071068, y: -0.0000022759298, z: -0.000005145291, w: 0.7071067}
+  m_LocalPosition: {x: -0.7007559, y: 0.40058255, z: 0.73816526}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4200704012255945884}
+  m_Father: {fileID: 6119797386969155999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &2684775894155301759
 Rigidbody:
@@ -1268,6 +1270,8 @@ MonoBehaviour:
   _animator: {fileID: 6801424375014500595}
   _openCheckParameter: 
   _closeCheckParameter: 
+  _isFuelCheck: 0
+  _checkParameter: 
 --- !u!135 &8434619149687817073
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1317,12 +1321,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3922812600671922198}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.108972915, y: 0.20623831, z: -0.69588274, w: 0.67921865}
-  m_LocalPosition: {x: 0.3633, y: -1.0611, z: 0.1573}
+  m_LocalRotation: {x: -0.67775375, y: -0.5916454, z: 0.3678501, w: -0.23514253}
+  m_LocalPosition: {x: 0.0027131685, y: 0.013098269, z: -0.001646431}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6119797386969155999}
+  m_Father: {fileID: 2161826717855221641}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &7812523450466108222
 Rigidbody:
@@ -1507,6 +1511,8 @@ MonoBehaviour:
   _animator: {fileID: 6801424375014500595}
   _openCheckParameter: 
   _closeCheckParameter: 
+  _isFuelCheck: 0
+  _checkParameter: 
 --- !u!135 &182371228774258613
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1811,12 +1817,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4066598950035749907}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0188, z: 0}
+  m_LocalRotation: {x: -0.7071068, y: -0.00000227593, z: -0.0000051452907, w: 0.7071067}
+  m_LocalPosition: {x: -0.70075583, y: 0.4005878, z: 0.738166}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9211379505548061958}
+  m_Father: {fileID: 6119797386969155999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &8679483793202444415
 Rigidbody:
@@ -2001,6 +2007,8 @@ MonoBehaviour:
   _animator: {fileID: 6801424375014500595}
   _openCheckParameter: 
   _closeCheckParameter: 
+  _isFuelCheck: 0
+  _checkParameter: 
 --- !u!135 &1624190845497720829
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3251,6 +3259,8 @@ MonoBehaviour:
   _animator: {fileID: 6801424375014500595}
   _openCheckParameter: openFuelBotRight
   _closeCheckParameter: closingFuelBotRight
+  _isFuelCheck: 0
+  _checkParameter: 
 --- !u!135 &3919440714131684104
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3941,7 +3951,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 3c50139fc34b36846b7c7d5990b86dfc, type: 2}
     - target: {fileID: 5866666021909216657, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
       propertyPath: m_UpdateMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6500585378061576834, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
       propertyPath: m_RenderingLayerMask
@@ -3959,14 +3969,17 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6621687332292893949, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
-      insertIndex: 9
-      addedObject: {fileID: 1279922827066632404}
-    - targetCorrespondingSourceObject: {fileID: 6621687332292893949, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 961311811182992456}
     - targetCorrespondingSourceObject: {fileID: 6621687332292893949, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9078641252092816385}
+    - targetCorrespondingSourceObject: {fileID: 6621687332292893949, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8246663122181332774}
+    - targetCorrespondingSourceObject: {fileID: 6621687332292893949, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4687136111170682529}
     - targetCorrespondingSourceObject: {fileID: -107028184770442222, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5450107355691927974}
@@ -3985,6 +3998,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7419995738757064424, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7021009009514289612}
+    - targetCorrespondingSourceObject: {fileID: -7995772573644680469, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1279922827066632404}
     - targetCorrespondingSourceObject: {fileID: 810711060218939448, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1010659172798716301}
@@ -3994,15 +4010,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -1090871544287201180, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5189927988916372012}
-    - targetCorrespondingSourceObject: {fileID: -1090871544287201180, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8246663122181332774}
     - targetCorrespondingSourceObject: {fileID: -5385477436865613314, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7435894769351183582}
-    - targetCorrespondingSourceObject: {fileID: -5385477436865613314, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4687136111170682529}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
 --- !u!4 &308830477907139930 stripped
@@ -4018,6 +4028,11 @@ Transform:
 --- !u!4 &1589761834667576442 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7419995738757064424, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
+  m_PrefabInstance: {fileID: 1083422229392037218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2161826717855221641 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -7995772573644680469, guid: e113b0a75ebb1144890483bca82ffd4d, type: 3}
   m_PrefabInstance: {fileID: 1083422229392037218}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &4074169949154981511 stripped
