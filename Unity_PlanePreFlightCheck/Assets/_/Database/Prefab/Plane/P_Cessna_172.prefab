@@ -4187,9 +4187,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1002350624577495805}
     m_Modifications:
+    - target: {fileID: 831983412890115618, guid: b8402c95b2ebff84fbf0a76c53c71bea, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2297086716687991836, guid: b8402c95b2ebff84fbf0a76c53c71bea, type: 3}
+      propertyPath: m_Name
+      value: Button_FuelPump
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229661690197230720, guid: b8402c95b2ebff84fbf0a76c53c71bea, type: 3}
+      propertyPath: m_Name
+      value: Button_LightNavigation
+      objectReference: {fileID: 0}
     - target: {fileID: 4860015476469591153, guid: b8402c95b2ebff84fbf0a76c53c71bea, type: 3}
       propertyPath: m_Name
       value: P_Cessna_172_Int
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306803667384648720, guid: b8402c95b2ebff84fbf0a76c53c71bea, type: 3}
+      propertyPath: m_Name
+      value: Switch_Alternator
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717136881000627088, guid: b8402c95b2ebff84fbf0a76c53c71bea, type: 3}
+      propertyPath: m_Name
+      value: Switch_Battery
       objectReference: {fileID: 0}
     - target: {fileID: 7357209447433274264, guid: b8402c95b2ebff84fbf0a76c53c71bea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4230,6 +4250,10 @@ PrefabInstance:
     - target: {fileID: 7357209447433274264, guid: b8402c95b2ebff84fbf0a76c53c71bea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118651081371863607, guid: b8402c95b2ebff84fbf0a76c53c71bea, type: 3}
+      propertyPath: m_Name
+      value: Button_LightLand
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
