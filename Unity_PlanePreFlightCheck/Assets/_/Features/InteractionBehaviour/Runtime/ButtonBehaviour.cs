@@ -1,4 +1,3 @@
-using System;
 using Foundation.Runtime;
 using UnityEngine;
 using UnityEngine.Events;

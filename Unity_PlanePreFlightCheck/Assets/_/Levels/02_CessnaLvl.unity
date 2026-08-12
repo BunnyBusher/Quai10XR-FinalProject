@@ -647,6 +647,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4866640359579822722, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5242115884237826314, guid: a8846df036cbd414d850dd257be71b21, type: 3}
       propertyPath: m_Name
       value: P_Hangar
@@ -720,9 +724,53 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1532193159581203439, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2193102368281513956, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
       propertyPath: m_Name
       value: P_Cessna_172
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338102817098064588, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912708829363690980, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474691530818248074, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684559259304566881, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027563408887944046, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033358848274406074, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503555969104438792, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8346758831368952563, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359248948171052110, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552992921920356506, guid: 1fcf1f64dc4d00647b5d6f8dc2e7f90d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

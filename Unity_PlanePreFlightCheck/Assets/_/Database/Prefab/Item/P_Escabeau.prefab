@@ -113,13 +113,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b825c21af3f4f9a40b931791e4babf96, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b825c21af3f4f9a40b931791e4babf96, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b825c21af3f4f9a40b931791e4babf96, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ac574146d0ae15c4aa1b50ab45927d2c, type: 2}
+      objectReference: {fileID: 2100000, guid: 92276aefd9e271e4fb1bc8c1881a0333, type: 2}
     - target: {fileID: 919132149155446097, guid: b825c21af3f4f9a40b931791e4babf96, type: 3}
       propertyPath: m_Name
       value: 3D_Escabeau
