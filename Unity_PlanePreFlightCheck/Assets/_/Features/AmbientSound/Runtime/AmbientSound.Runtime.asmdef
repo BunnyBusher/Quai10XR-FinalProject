@@ -1,0 +1,16 @@
+{
+    "name": "AmbientSound.Runtime",
+    "rootNamespace": "AmbientSound.Runtime",
+    "references": [
+        "GUID:0f6ec9d6a5290f34ab3879e1747c49de"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
