@@ -1,4 +1,3 @@
-using System;
 using Foundation.Runtime;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -16,8 +15,11 @@ namespace CharacterController.Runtime
             _teleportModeExit.action.Enable();
         }
 
-       
-       
+        private void Start()
+        {
+            SetFact("cockpitBehaviour", this);
+        }
+
 
         private void OnDisable()
         {
@@ -45,10 +47,16 @@ namespace CharacterController.Runtime
         
         #region Main Methods
 
-        public void StopMovementWithJoystick()
+        public void StopMovementWithJoystick(TeleportingEventArgs teleport)
         {
+            Debug.Log("Teleporting");
             SetMovementOnPlayer(false);
             _teleportModeExit.action.performed += StartMovementWithJoystick;
+        }
+
+        public void SetTeleportExitAnchor(Transform exitAnchor)
+        {
+            _teleportExitAnchor = exitAnchor;
         }
         
 

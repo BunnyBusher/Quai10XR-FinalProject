@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1750701880926870985}
   - component: {fileID: 6494103849695842032}
   - component: {fileID: 6946866720873046584}
+  - component: {fileID: 5084831308765362751}
   m_Layer: 2
   m_Name: P_Locomotion
   m_TagString: Untagged
@@ -79,6 +80,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: CharacterController.Runtime::CharacterController.Runtime.PlayerRegister
   _movementObject: {fileID: 4889307685540146708}
+  _teleportObject: {fileID: 0}
+--- !u!114 &5084831308765362751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6224440571707899622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3448c0794fe8a7a4fb604303d0245ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: CharacterController.Runtime::CharacterController.Runtime.CockpitBehaviour
+  _teleportModeExit: {fileID: 4818138257596498850, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  _teleportationProvider: {fileID: 2725826177559499119}
 --- !u!1001 &241791043635156167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -360,30 +376,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2331488741039694707, guid: f051b10ae4b22f14391f779b8196b76a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5779076088780028333}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f051b10ae4b22f14391f779b8196b76a, type: 3}
 --- !u!1 &4889307685540146708 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2331488741039694707, guid: f051b10ae4b22f14391f779b8196b76a, type: 3}
   m_PrefabInstance: {fileID: 7170104197210918247}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5779076088780028333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4889307685540146708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3448c0794fe8a7a4fb604303d0245ec3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: CharacterController.Runtime::CharacterController.Runtime.CockpitBehaviour
-  _teleportModeExit: {fileID: 4818138257596498850, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _teleportationProvider: {fileID: 2725826177559499119}
 --- !u!4 &8694430367585487913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1957238028624068942, guid: f051b10ae4b22f14391f779b8196b76a, type: 3}
