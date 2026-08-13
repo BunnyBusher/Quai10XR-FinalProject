@@ -22,6 +22,7 @@ namespace InteractionBehaviour.Runtime
                     .PlaneIsPowered())
             {
                 _onButtonActivation?.Invoke(false);
+                _isSend = false;
             }
             
             if (!_isSend && GetFact<AlternatorAndBatteryBehaviour>("alternatorAndBatteryBehaviour").PlaneIsPowered())

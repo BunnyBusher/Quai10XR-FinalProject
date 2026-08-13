@@ -34,7 +34,7 @@ namespace InteractionBehaviour.Runtime
             // _isTweenInProgress = true;
 
             
-            float targetYAngle = Mathf.Lerp(_minimumYAngle, _maximumYAngle, value ? _valueOnActivation : 0f);
+            float targetYAngle = Mathf.Lerp(_minimumZAngle, _maximumZAngle, value ? _valueOnActivation : 0f);
             Quaternion targetRotation = Quaternion.Euler(0f, 0f, targetYAngle);
             
             Sequence.Create()
@@ -50,8 +50,8 @@ namespace InteractionBehaviour.Runtime
         
         
         [Header("Gauge properties")]
-        [SerializeField] private float _minimumYAngle;
-        [SerializeField] private float _maximumYAngle;
+        [SerializeField] private float _minimumZAngle;
+        [SerializeField] private float _maximumZAngle;
         [Range(0f,1f),SerializeField] private float _valueOnActivation;
         [SerializeField] private Transform _needleAnchor;
 
