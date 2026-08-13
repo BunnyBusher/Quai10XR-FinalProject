@@ -49,7 +49,6 @@ namespace CharacterController.Runtime
 
         public void StopMovementWithJoystick(TeleportingEventArgs teleport)
         {
-            Debug.Log("Teleporting");
             SetMovementOnPlayer(false);
             _teleportModeExit.action.performed += StartMovementWithJoystick;
         }
