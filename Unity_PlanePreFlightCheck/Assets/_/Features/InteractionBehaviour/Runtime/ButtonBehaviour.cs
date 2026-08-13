@@ -11,6 +11,21 @@ namespace InteractionBehaviour.Runtime
         public UnityEvent<bool> _onButtonActivation;
         
         #endregion
+
+        #region Unity API
+
+        private void FixedUpdate()
+        {
+            if (!_sendable) return;
+            
+            if (!_isSend && GetFact<AlternatorAndBatteryBehaviour>("alternatorAndBatteryBehaviour").PlaneIsPowered())
+            {
+                _onButtonActivation?.Invoke(_isActivate);
+                _isSend = true;
+            }
+        }
+
+        #endregion
        
         
         #region Main Method
@@ -18,8 +33,11 @@ namespace InteractionBehaviour.Runtime
         public void ButtonIsPress()
         {
             _isActivate = !_isActivate;
-            transform.localRotation = _isActivate ? Quaternion.Euler(0, 0, 20) : Quaternion.Euler(0,0,50);
-            _onButtonActivation?.Invoke(_isActivate);
+            _meshAnchor.localRotation = _isActivate ? Quaternion.Euler(_rotationOn) : Quaternion.Euler(_rotationOff);
+            _isSend = false;
+            
+            if (!_sendable)_onButtonActivation?.Invoke(_isActivate);
+
         }
 
         #endregion
@@ -27,6 +45,12 @@ namespace InteractionBehaviour.Runtime
         #region Private
 
         private bool _isActivate = false;
+        [SerializeField] private Transform _meshAnchor;
+        [SerializeField] private Vector3 _rotationOn;
+        [SerializeField] private Vector3 _rotationOff;
+
+        private bool _isSend;
+        [SerializeField]private bool _sendable;
 
         #endregion
     }
