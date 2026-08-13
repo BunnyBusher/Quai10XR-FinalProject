@@ -4,17 +4,11 @@ public class ASMFuelChecker : StateMachineBehaviour
 {
     #region Unity API
 
-    public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        animator.SetBool(_checkParameter, false);
-    }
-
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        animator.SetBool(_checkParameter, false);
         animator.SetBool(_closeCheckParameter, false);
     }
-
-    
 
     #endregion
     

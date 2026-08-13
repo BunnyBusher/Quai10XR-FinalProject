@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 6004765314361761525}
   - component: {fileID: 4720627591452949667}
   m_Layer: 0
-  m_Name: P_AnimoilCap
+  m_Name: P_AnimFuelCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: InteractionBehaviour.Runtime::InteractionBehaviour.Runtime.FuelCheckInteraction
   _animator: {fileID: 900726643024816299}
+  _fuelCheck: {fileID: 5849043848792434795}
 --- !u!54 &6004765314361761525
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -476,6 +477,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb1cf02647f689f4884f2cb9e0597e07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: InteractionBehaviour.Runtime::InteractionBehaviour.Runtime.FillCheckerInteraction
+  m_OnEndAnimation:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9032359800840041502}
+        m_TargetAssemblyTypeName: InteractionBehaviour.Runtime.FuelCheckInteraction,
+          InteractionBehaviour.Runtime
+        m_MethodName: HideFuelCheck
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _meshRenderer: {fileID: 7054771647678477769}
 --- !u!4 &6512252101945766609 stripped
 Transform:

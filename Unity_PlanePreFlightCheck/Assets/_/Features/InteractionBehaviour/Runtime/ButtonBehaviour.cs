@@ -17,6 +17,12 @@ namespace InteractionBehaviour.Runtime
         private void FixedUpdate()
         {
             if (!_sendable) return;
+
+            if (_isActivate && !GetFact<AlternatorAndBatteryBehaviour>("alternatorAndBatteryBehaviour")
+                    .PlaneIsPowered())
+            {
+                _onButtonActivation?.Invoke(false);
+            }
             
             if (!_isSend && GetFact<AlternatorAndBatteryBehaviour>("alternatorAndBatteryBehaviour").PlaneIsPowered())
             {
