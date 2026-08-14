@@ -131,6 +131,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_DoorTeleport
       objectReference: {fileID: 0}
+    - target: {fileID: 1796953282984656735, guid: 83662aa19cbc7e446bf1e2a3a9d2cf83, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.543
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796953282984656735, guid: 83662aa19cbc7e446bf1e2a3a9d2cf83, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8201
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796953282984656735, guid: 83662aa19cbc7e446bf1e2a3a9d2cf83, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.729
+      objectReference: {fileID: 0}
+    - target: {fileID: 4275678811507600891, guid: 83662aa19cbc7e446bf1e2a3a9d2cf83, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.079
+      objectReference: {fileID: 0}
     - target: {fileID: 5403552740996769612, guid: 83662aa19cbc7e446bf1e2a3a9d2cf83, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.792
@@ -322,6 +338,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 99277259373369648, guid: a8846df036cbd414d850dd257be71b21, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3145731222462558125, guid: a8846df036cbd414d850dd257be71b21, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -707,6 +727,26 @@ PrefabInstance:
     - target: {fileID: 2193102368281513956, guid: 020f33d841c87f042a9db7a2afd95a0c, type: 3}
       propertyPath: m_Name
       value: P_Robin_DR400
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548003361701993413, guid: 020f33d841c87f042a9db7a2afd95a0c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573407121099351262, guid: 020f33d841c87f042a9db7a2afd95a0c, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108699124532650511, guid: 020f33d841c87f042a9db7a2afd95a0c, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108699124532650511, guid: 020f33d841c87f042a9db7a2afd95a0c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 75a5eba62f25a4c47a0168e85184f56e, type: 2}
+    - target: {fileID: 8738617345334341016, guid: 020f33d841c87f042a9db7a2afd95a0c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
