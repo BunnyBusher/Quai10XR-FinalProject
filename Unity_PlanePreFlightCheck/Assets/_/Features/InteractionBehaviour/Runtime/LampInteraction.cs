@@ -19,9 +19,9 @@ namespace InteractionBehaviour.Runtime
         public void TurnLightByBool(bool value)
         {
             _materialPropertyBlock = new MaterialPropertyBlock();
-            _materialPropertyBlock.SetColor("_BaseColor", value ? Color.red : Color.darkRed);
+            _materialPropertyBlock.SetInt("_Emissive_ON_OFF",value ? 1 : 0);
+            _materialPropertyBlock.SetColor("_HDR", value ? _color : Color.white);
             _renderer.SetPropertyBlock(_materialPropertyBlock);
-            _light.enabled = value;
         }
         
 
@@ -29,7 +29,7 @@ namespace InteractionBehaviour.Runtime
 
         #region Private and Protected
 
-        [SerializeField] private Light _light;
+        [SerializeField] private Color _color;
         private Renderer _renderer;
         private MaterialPropertyBlock _materialPropertyBlock;
 

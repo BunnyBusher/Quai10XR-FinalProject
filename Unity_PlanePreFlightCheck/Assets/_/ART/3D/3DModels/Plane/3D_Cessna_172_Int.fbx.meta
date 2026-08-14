@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 3449f1eda1dba97428a268fdb6731dc2
+guid: 8c100d097e2d6e648999b07f684ee581
 ModelImporter:
   serializedVersion: 24400
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Cessna_172_Int
+    second: {fileID: 2100000, guid: 6aa1734370bb19244a072e321c82699e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -47,7 +52,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

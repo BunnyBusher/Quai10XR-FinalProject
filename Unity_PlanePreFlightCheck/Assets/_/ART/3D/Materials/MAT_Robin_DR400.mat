@@ -25,15 +25,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Albedo:
-        m_Texture: {fileID: 2800000, guid: 3f76f39d3b8e9ed419f22e7931d0446f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 685a63444f003844d9eace55ca170055, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MSAO:
-        m_Texture: {fileID: 2800000, guid: b41df70ab8cebff46abdc10f6bcd6d33, type: 3}
+        m_Texture: {fileID: 2800000, guid: ca05884af7045cb4aa0407ceea8cf8ce, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
-        m_Texture: {fileID: 2800000, guid: c6623c588e5404845bdaf2c8e207b461, type: 3}
+        m_Texture: {fileID: 2800000, guid: 85d7ae84e3ade97408f97f250c8ce767, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
