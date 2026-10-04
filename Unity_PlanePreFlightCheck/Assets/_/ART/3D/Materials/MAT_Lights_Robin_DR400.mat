@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MAT_Lights_Robin_DR400
-  m_Shader: {fileID: -6465566751694194690, guid: bf6ebc45a05ec0543b05efe50d99fcf3, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 77723404014a1944fb202b5c8cff056e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
